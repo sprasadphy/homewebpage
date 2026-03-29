@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Talks and presentations by Dr. Suraj Prasad." />
+    <title>Talks | Dr. Suraj Prasad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-orange">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="site-title" href="index.html">Suraj Prasad</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          Menu
+        </button>
+        <nav id="primary-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a class="active" href="talks.html" aria-current="page">Talks</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <h1>Talks and Presentations</h1>
+
+      <section class="content-section" aria-labelledby="talks-list">
+        <h2 id="talks-list">Chronological List</h2>
+        <ul class="highlights-list">
+          <li>17 May 2022, LHCP 2022 Poster: Transverse spherocity dependence of global observables in heavy-ion collisions at the LHC using AMPT model.</li>
+          <li>20 Jun 2022, GPU Day 2022 (Wigner RCP) Oral: Machine learning based estimator for elliptic flow in heavy-ion collisions.</li>
+          <li>9 Sep 2022, Wigner RCP Talk: Spherocity dependent correlation studies of initial and final anisotropy at the LHC.</li>
+          <li>10 Nov 2022, IIT Indore AI/ML Workshop Oral: Deep neural network based estimator for elliptic flow.</li>
+          <li>05 Dec 2022, 66th DAE Symposium Poster: Spherocity dependence of global observables in heavy-ion collisions.</li>
+          <li>15 Dec 2022, XXV DAE-BRNS HEP Symposium Poster: Initial and final state anisotropies in heavy-ion collisions.</li>
+          <li>21 Jan 2023, Research and Industrial Conclave Oral: DNN-based estimator for elliptic flow coefficient.</li>
+          <li>08 Feb 2023, ICPAQGP-2023 Poster: Event topology and anisotropy in heavy-ion collisions.</li>
+          <li>03 Nov 2023, Heavy Flavour Meet 2023 Oral: Inclusive/prompt/non-prompt J/psi production using machine learning.</li>
+          <li>09 Dec 2023, DAE Symposium Oral: Segregating topological productions of J/psi at the LHC using machine learning.</li>
+          <li>11 Dec 2023, DAE Symposium Poster: Dependence of transverse spherocity on initial/final anisotropies.</li>
+          <li>19 Apr 2024, Wigner RCP Talk: Prompt/non-prompt J/psi production at the LHC using machine learning.</li>
+          <li>19 Dec 2024, XXVI DAE-BRNS HEP Symposium Oral: Flow fluctuation with alpha-clustered O16 in O-O collisions.</li>
+          <li>19 Dec 2024, XXVI DAE-BRNS HEP Symposium Oral: Prompt/non-prompt open and hidden charm hadron production using machine learning.</li>
+          <li>13-16 Jan 2025, ATHIC 2025 Oral: Effects of alpha-clustered O16 in O16-O16 collisions within CGC+Hydro.</li>
+          <li>21 Jan 2025, IIT Indore Workshop Oral: Nuclear density profile effects in global properties and anisotropic flow in O-O collisions.</li>
+          <li>6-12 Apr 2025, QM2025 Poster: Probing exotic alpha-cluster profile of O16 through anisotropic flow fluctuations.</li>
+          <li>6-12 Apr 2025, QM2025 Poster: K0S and Lambda production versus flattenicity in proton-proton collisions with ALICE.</li>
+          <li>8 Aug 2025, HUN-REN Wigner RCP Talk: Impact of elliptic flow on higher-order flow coefficients at the LHC.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Suraj Prasad</p>
+      </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

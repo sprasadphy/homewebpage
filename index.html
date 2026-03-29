@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Academic homepage for a high-energy physics PhD researcher working on heavy-ion collisions, anisotropic flow, and jet correlations."
+    />
+    <title>Dr. Suraj Prasad | High-Energy Physics Researcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-rainbow">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="site-title" href="index.html">Suraj Prasad</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          Menu
+        </button>
+        <nav id="primary-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Dr. Suraj Prasad</h1>
+          <p class="affiliation">Postdoctoral Researcher</p>
+          <p class="affiliation-sub">HUN-REN Wigner Research Centre for Physics, Budapest, Hungary</p>
+          <p class="research-field">High-Energy Nuclear Physics | ALICE Collaboration</p>
+          <p class="summary">
+            Experimental high-energy physicist studying quark-gluon plasma signatures in
+            small to heavy-ion collision systems. My work spans anisotropic flow coefficients
+            <span class="math-inline">v<sub>n</sub></span>, event-shape engineering,
+            machine-learning-driven heavy-flavor identification, and jet/correlation observables
+            at RHIC and LHC energies.
+          </p>
+
+          <div class="profile-links">
+            <a href="https://orcid.org/0000-0003-0607-2841" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="https://inspirehep.net/authors/1945401" target="_blank" rel="noopener noreferrer">INSPIRE</a>
+            <a href="https://scholar.google.com/citations?user=O55tlKYAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          </div>
+
+          <div class="metric-grid" aria-label="Quick academic summary">
+            <article class="metric-card">
+              <h3>PhD</h3>
+              <p>IIT Indore, 2020-2025</p>
+              <p class="metric-sub">Supervisor: Prof. Raghunath Sahoo</p>
+            </article>
+            <article class="metric-card">
+              <h3>Collaboration</h3>
+              <p>ALICE at CERN LHC</p>
+            </article>
+            <article class="metric-card">
+              <h3>Focus</h3>
+              <p>QGP, ESE, ML in collider physics</p>
+              <p class="metric-sub">From pp to heavy-ion systems</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container content-section" aria-labelledby="highlights-heading">
+        <h2 id="highlights-heading">Current Research Themes</h2>
+        <ul class="highlights-list">
+          <li>
+            Event-shape topology and global observables in heavy-ion collisions,
+            including transverse spherocity studies.
+          </li>
+          <li>
+            Initial-state geometry and final-state anisotropy mapping through
+            differential and fluctuation-based $v_n$ analyses.
+          </li>
+          <li>
+            Machine-learning methods for inclusive, prompt, and non-prompt charm/
+            charmonium separation in proton-proton collisions.
+          </li>
+          <li>
+            Alpha-clustered nuclear geometry effects in O-O and p-O systems at LHC energies.
+          </li>
+        </ul>
+      </section>
+
+      <section class="container content-section" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education and Training</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>PhD in Physics (Experimental High-Energy Physics)</h3>
+            <p>Indian Institute of Technology Indore, India | 2020-2025</p>
+            <p>Thesis defended on 06 October 2025. DOI:</p>
+            <p><a href="https://doi.org/10.17181/9v1cx-sq289" target="_blank" rel="noopener noreferrer">10.17181/9v1cx-sq289</a></p>
+          </article>
+          <article class="timeline-item">
+            <h3>MSc in Physics (High-Energy Physics)</h3>
+            <p>Sambalpur University, Odisha, India | 2017-2019</p>
+          </article>
+          <article class="timeline-item">
+            <h3>BSc Physics (First Class Honours with Distinction)</h3>
+            <p>Rairangpur College, North Orissa University, Odisha, India | 2014-2017</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container content-section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Visiting and Teaching Experience</h2>
+        <div class="two-col">
+          <article class="panel">
+            <h3>Visiting Positions at Wigner RCP</h3>
+            <ul>
+              <li>Visitor, Wigner RCP, Budapest | Sep 2022</li>
+              <li>Visitor, HUN-REN Wigner RCP, Budapest | Apr-May 2024</li>
+              <li>Visitor, HUN-REN Wigner RCP, Budapest | Jul-Aug 2025</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>Teaching Roles at IIT Indore</h3>
+            <ul>
+              <li>Teaching Assistant, Modern Physics (BTech, 1 semester)</li>
+              <li>Teaching Assistant, Physics Lab (BTech, 3 semesters)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Suraj Prasad</p>
+      </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script>
+      // Keep the copyright year current without introducing a framework.
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

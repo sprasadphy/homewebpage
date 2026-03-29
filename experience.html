@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Education, skills, and academic experience of Dr. Suraj Prasad." />
+    <title>Experience | Dr. Suraj Prasad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-red">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="site-title" href="index.html">Suraj Prasad</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          Menu
+        </button>
+        <nav id="primary-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a class="active" href="experience.html" aria-current="page">Experience</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <h1>Education and Experience</h1>
+
+      <section class="content-section" aria-labelledby="exp-education">
+        <h2 id="exp-education">Education</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>PhD, Experimental High Energy Physics (2020-2025)</h3>
+            <p>Department of Physics, IIT Indore, India</p>
+            <p>Supervisor: Prof. Raghunath Sahoo</p>
+            <p>Thesis DOI: <a href="https://doi.org/10.17181/9v1cx-sq289" target="_blank" rel="noopener noreferrer">10.17181/9v1cx-sq289</a></p>
+          </article>
+          <article class="timeline-item">
+            <h3>MSc Physics (High Energy Physics), 2017-2019</h3>
+            <p>Sambalpur University, Odisha, India</p>
+          </article>
+          <article class="timeline-item">
+            <h3>BSc Physics (First Class Honours with Distinction), 2014-2017</h3>
+            <p>Rairangpur College, North Orissa University, Odisha, India</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="exp-collab">
+        <h2 id="exp-collab">Collaboration and Visits</h2>
+        <ul class="highlights-list">
+          <li>ALICE Collaboration data analyses on flattenicity and event topology observables.</li>
+          <li>Visitor, Wigner RCP, Budapest (Sep 2022).</li>
+          <li>Visitor, HUN-REN Wigner RCP, Budapest (Apr-May 2024).</li>
+          <li>Visitor, HUN-REN Wigner RCP, Budapest (Jul-Aug 2025).</li>
+          <li>Current Postdoctoral position at HUN-REN Wigner Research Centre for Physics.</li>
+        </ul>
+      </section>
+
+      <section class="content-section" aria-labelledby="exp-teaching">
+        <h2 id="exp-teaching">Teaching Experience</h2>
+        <ul class="highlights-list">
+          <li>Teaching Assistant, Modern Physics (BTech), IIT Indore - 1 semester.</li>
+          <li>Teaching Assistant, Physics Lab (BTech), IIT Indore - 3 semesters.</li>
+        </ul>
+      </section>
+
+      <section class="content-section" aria-labelledby="exp-skills">
+        <h2 id="exp-skills">Technical Skills</h2>
+        <div class="two-col">
+          <article class="panel">
+            <h3>Programming and Analysis</h3>
+            <ul>
+              <li>C, C++, Python, Fortran, Mathematica, MATLAB</li>
+              <li>Bash scripting, LaTeX, CERN ROOT</li>
+              <li>Machine learning methods for collider data analysis</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>Simulation and Generators</h3>
+            <ul>
+              <li>PYTHIA8, AMPT, HIJING</li>
+              <li>EPOS-LHC, EPOS4, MUSIC, IPGlasma</li>
+              <li>UrQMD</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="exp-languages">
+        <h2 id="exp-languages">Languages</h2>
+        <p>English, Hindi, and Odia (reading, writing, and speaking).</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Suraj Prasad</p>
+      </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Publications list for a high-energy physics PhD researcher."
+    />
+    <title>Publications | Dr. Suraj Prasad</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]],
+          displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+          macros: {
+            sqrts: "\\sqrt{s}",
+            sqrtsnn: "\\sqrt{s_{\\mathrm{NN}}}"
+          }
+        },
+        options: {
+          skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"]
+        }
+      };
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body class="theme-green">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="site-title" href="index.html">Suraj Prasad</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          Menu
+        </button>
+        <nav id="primary-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a class="active" href="publications.html" aria-current="page">Publications</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <h1>Publications</h1>
+      <p>
+        <a href="https://inspirehep.net/authors/1945401" target="_blank" rel="noopener noreferrer"
+          >Click here for full list of publications (including experimental publications).</a
+        >
+      </p>
+
+      <section class="content-section" aria-labelledby="pub-list-heading">
+        <h2 id="pub-list-heading">Publication Records</h2>
+
+        <form id="pub-filters" class="pub-filters" aria-label="Publication filters">
+          <div class="filter-row">
+            <label for="filter-type">Record Type</label>
+            <select id="filter-type" name="type">
+              <option value="all">All records</option>
+              <option value="article">Articles</option>
+              <option value="proceedings">Conference proceedings</option>
+            </select>
+          </div>
+
+          <div class="filter-row">
+            <label for="filter-authors">Authorship</label>
+            <select id="filter-authors" name="authors">
+              <option value="any">Any author count</option>
+              <option value="single">Single-author only</option>
+              <option value="ten_or_less" selected>10 authors or fewer</option>
+            </select>
+          </div>
+
+          <div class="filter-row">
+            <label for="filter-year-from">Year From</label>
+            <input id="filter-year-from" name="year_from" type="number" min="1900" max="2100" step="1" placeholder="e.g. 2020" />
+          </div>
+
+          <div class="filter-row">
+            <label for="filter-year-to">Year To</label>
+            <input id="filter-year-to" name="year_to" type="number" min="1900" max="2100" step="1" placeholder="e.g. 2026" />
+          </div>
+
+          <div class="filter-row filter-row-check">
+            <input id="filter-refereed" name="refereed" type="checkbox" />
+            <label for="filter-refereed">Refereed only</label>
+          </div>
+
+          <div class="filter-row filter-row-check">
+            <input id="filter-first-author" name="first_author" type="checkbox" />
+            <label for="filter-first-author">First-author only (Suraj Prasad)</label>
+          </div>
+
+          <div class="filter-row filter-row-actions">
+            <button id="filter-reset" type="button">Reset Filters</button>
+          </div>
+        </form>
+
+        <p id="pub-status" class="pub-status" aria-live="polite">Loading local publication records...</p>
+        <p id="pub-count" class="pub-count" aria-live="polite"></p>
+        <div id="active-filters" class="active-filters" aria-live="polite"></div>
+        <ul id="pub-list" class="pub-list"></ul>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Suraj Prasad</p>
+      </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/publications_data.js"></script>
+    <script src="scripts/publications.js"></script>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

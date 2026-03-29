@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Research overview: heavy-ion collisions, anisotropic flow coefficients, and jet correlation observables."
+    />
+    <title>Research | Dr. Suraj Prasad</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]],
+          displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+          macros: {
+            sqrts: "\\sqrt{s}",
+            sqrtsnn: "\\sqrt{s_{\\mathrm{NN}}}"
+          }
+        },
+        options: {
+          skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"]
+        }
+      };
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body class="theme-indigo">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="site-title" href="index.html">Suraj Prasad</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          Menu
+        </button>
+        <nav id="primary-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="research.html" aria-current="page">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <h1>Research</h1>
+      <p class="lead">
+        My research focuses on emergent collective behavior in QCD matter and on advanced
+        analysis strategies for collider data, combining precision observables with
+        machine-learning-assisted reconstruction and classification.
+      </p>
+
+      <section class="content-section" aria-labelledby="topic-flow">
+        <h2 id="topic-flow">Anisotropic Flow and Initial-State Geometry</h2>
+        <p>
+          A key objective is to quantify how initial geometric anisotropies are mapped into
+          final-state momentum anisotropies. I study the harmonic flow coefficients
+          $v_n$ through multi-particle cumulants and differential analyses in transverse
+          momentum and centrality.
+        </p>
+        <p>
+          The azimuthal particle distribution is commonly expressed as
+          $$
+          \frac{dN}{d\varphi} \propto 1 + 2\sum_{n=1}^{\infty} v_n \cos\left[n(\varphi - \Psi_n)\right],
+          $$
+          where $\Psi_n$ denotes the event-plane angle of harmonic order $n$.
+        </p>
+      </section>
+
+      <section class="content-section" aria-labelledby="topic-jets">
+        <h2 id="topic-jets">Jet and Two-Particle Correlations</h2>
+        <p>
+          I investigate near-side and away-side correlation structures to disentangle
+          collective backgrounds from jet-induced signals. This includes studies of
+          angular broadening, yield modifications, and path-length dependent quenching
+          signatures.
+        </p>
+      </section>
+
+      <section class="content-section" aria-labelledby="topic-event-shape">
+        <h2 id="topic-event-shape">Event-Shape Engineering and Topology</h2>
+        <p>
+          A central line of my work is event topology characterization using observables
+          such as transverse spherocity and flattenicity. These techniques are used to
+          classify final states and isolate underlying production mechanisms from
+          soft-QCD to heavy-flavor sectors.
+        </p>
+      </section>
+
+      <section class="content-section" aria-labelledby="topic-alice">
+        <h2 id="topic-alice">ALICE Collaboration Analyses</h2>
+        <div class="two-col">
+          <article class="panel">
+            <h3>Flattenicity-Dependent Production</h3>
+            <p>
+              Particle production as a function of charged-particle flattenicity in
+              pp collisions at $\sqrt{s}=13$ TeV (published in Phys. Rev. D).
+            </p>
+          </article>
+          <article class="panel">
+            <h3>Strange Hadron Production</h3>
+            <p>
+              Study of $K^{0}_{S}$ and $\Lambda+\bar{\Lambda}$ versus charged-particle
+              flattenicity in pp collisions at $\sqrt{s}=13.6$ TeV with ALICE.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="topic-methods">
+        <h2 id="topic-methods">Methods and Analysis Infrastructure</h2>
+        <p>
+          My workflow combines robust event and track selection, systematic uncertainty
+          propagation, and reproducible data-processing scripts suitable for collaboration
+          scale analyses. Emphasis is placed on transparent documentation and portability
+          of results across computing environments.
+        </p>
+        <p>
+          Programming and analysis stack includes C/C++, Python, ROOT, machine-learning
+          workflows, and Monte Carlo/event generators such as PYTHIA8, AMPT, HIJING,
+          EPOS(-LHC), MUSIC, IP-Glasma, and UrQMD.
+        </p>
+      </section>
+
+      <section class="content-section" aria-labelledby="topic-talks">
+        <h2 id="topic-talks">Selected Recent Talks</h2>
+        <ul class="highlights-list">
+          <li>
+            ATHIC 2025: Effects of alpha-clustered $^{16}$O structure in O-O collisions
+            within CGC+Hydro framework.
+          </li>
+          <li>
+            QM2025 (Frankfurt): Flow fluctuations probing exotic $\alpha$-cluster profiles
+            in $^{16}$O-$^{16}$O collisions.
+          </li>
+          <li>
+            Wigner RCP (Aug 2025): Impact of elliptic flow on higher-order flow
+            coefficients at LHC energies.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Suraj Prasad</p>
+      </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
