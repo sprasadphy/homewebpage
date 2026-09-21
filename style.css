@@ -1333,6 +1333,82 @@ a:hover {
   border-top: 1px solid var(--border-light);
 }
 
+/* ML and Nuclear Simulation Enhancements */
+.sim-class-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: all var(--anim-fast);
+}
+
+.badge-prompt {
+  background: var(--emerald-soft);
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.badge-nonprompt {
+  background: var(--indigo-soft);
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+}
+
+.prob-meter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.prob-meter-item {
+  display: grid;
+  grid-template-columns: 140px 1fr 45px;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.prob-meter-label {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.prob-meter-track {
+  height: 10px;
+  background: #e2e8f0;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+}
+
+.prob-meter-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 120ms ease;
+}
+
+.prob-meter-fill.fill-prompt {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.prob-meter-fill.fill-nonprompt {
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+}
+
+.prob-meter-pct {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: right;
+  color: var(--muted);
+}
+
+
 /* CV Actions */
 .cv-actions {
   margin-bottom: 1.5rem;

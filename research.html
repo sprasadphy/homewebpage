@@ -27,7 +27,7 @@
     <meta name="twitter:description" content="Exploring the Quark-Gluon Plasma, strangeness enhancement, collectivity, and event-shape engineering at LHC and RHIC." />
     <meta name="twitter:image" content="https://sprasadphy.github.io/homewebpage/favicon.svg" />
 
-    <link rel="stylesheet" href="style.css?v=20260921d" />
+    <link rel="stylesheet" href="style.css?v=20260921e" />
     <script>
       window.MathJax = {
         tex: {
@@ -355,36 +355,215 @@
         </figure>
       </article>
 
-      <!-- Section 7: Nuclear Structure & AI -->
-      <article class="research-topic-card" id="sec-frontiers" aria-labelledby="heading-frontiers">
-        <span class="key-concept-tag">Frontiers: Nuclear Structure & AI</span>
-        <h2 id="heading-frontiers">7. Frontiers: Nuclear Clustering & Artificial Intelligence</h2>
-        
-        <div class="panel" style="margin-bottom: 1.5rem;">
-          <h3>A. Exotic $\alpha$-Clustering in Light Nuclei ($^{16}\text{O}\text{--}^{16}\text{O}$)</h3>
-          <p>
-            Do light nuclei behave as uniform spherical liquids of nucleons, or do they organize into geometric sub-clusters of $\alpha$-particles ($^4\text{He}$)? 
-            In collaboration with theorists and experimentalists, we probe the tetrahedral $\alpha$-clustered nuclear geometry of Oxygen-16 by measuring harmonic flow fluctuations ($v_2, v_3, v_4$) in $^{16}\text{O}\text{--}^{16}\text{O}$ collisions at LHC energies within hydrodynamic and transport frameworks (CGC+Hydro, AMPT).
-          </p>
-        </div>
+      <!-- Section 7: Nuclear Structure & Alpha-Clustering -->
+      <article class="research-topic-card" id="sec-nuclear-structure" aria-labelledby="heading-nuclear-structure">
+        <span class="key-concept-tag">Nuclear Structure & &alpha;-Clustering</span>
+        <h2 id="heading-nuclear-structure">7. Nuclear Structure &amp; &alpha;-Clustering in Relativistic Collisions</h2>
+        <p>
+          Can high-energy particle colliders serve as femtometer-scale microscopes to photograph the internal spatial arrangement of atomic nuclei? 
+          For decades, standard heavy-ion models treated atomic nuclei as isotropic, structureless liquid droplets characterized by the continuous <strong>Woods-Saxon density distribution</strong>:
+          $$
+          \rho(r) = \frac{\rho_0}{1 + \exp\left[\frac{r - R_0}{a}\right]}
+          $$
+          where $R_0$ is the nuclear radius and $a$ is the surface diffuseness parameter.
+        </p>
+        <p>
+          However, in light self-conjugate nuclei with $A = 4n$ nucleons—such as Carbon-12 ($^{12}\text{C}$), Oxygen-16 ($^{16}\text{O}$), and Neon-20 ($^{20}\text{Ne}$)—quantum mechanical nucleon correlations favor the clustering of nucleons into tightly bound $\alpha$-particles ($^4\text{He}$ nuclei: 2 protons and 2 neutrons). In the doubly magic Oxygen-16 nucleus ($Z=8, N=8$), four $\alpha$-clusters arrange themselves into a symmetric <strong>tetrahedral geometry</strong>.
+        </p>
 
-        <div class="panel">
-          <h3>B. Machine Learning for Collider Physics</h3>
-          <p>
-            To address the immense data volumes of modern collider experiments, I develop deep learning frameworks (Convolutional Neural Networks, Deep Multilayer Perceptrons, and Gradient Boosted Decision Trees):
-          </p>
-          <ul style="margin-left: 1.5rem; margin-top: 0.5rem; line-height: 1.6;">
-            <li><strong>Impact Parameter ($b$) Estimation:</strong> Reconstructing collision centrality and impact parameter event-by-event directly from final-state detector hit profiles.</li>
-            <li><strong>Heavy-Flavor Identification:</strong> Classifying prompt vs. non-prompt $J/\psi$ and bottom-hadron decay kinematics in proton-proton collisions.</li>
-            <li><strong>Deep Learning Flow Estimators:</strong> Constructing non-linear neural estimators to extract elliptic flow $v_2$ in low-multiplicity systems where standard cumulant techniques experience significant statistical limitations.</li>
-          </ul>
+        <figure class="figure-embedded">
+          <img src="assets/research/alphaoxygen.png" alt="Tetrahedral alpha-clustered Oxygen-16 nucleus schematic" style="max-height: 440px; width: auto;" loading="lazy" />
+          <figcaption class="figure-caption">
+            <strong>Figure 8: Tetrahedral &alpha;-Clustered Structure of the $^{16}\text{O}$ Nucleus.</strong> 
+            Schematic representation of the Oxygen-16 nucleus modeled with four $\alpha$-particle ($^4\text{He}$) sub-clusters arranged at the vertices of a regular tetrahedron, compared to an isotropic spherical Woods-Saxon nucleon density distribution. Each $\alpha$-cluster contains two protons and two neutrons governed by internal short-range nuclear distributions.
+            <span class="figure-source">Source: S. Prasad, N. Mallick, R. Sahoo, and G. G. Barnaf&ouml;ldi, <em>Phys. Lett. B</em> <strong>860</strong>, 139145 (2025); D. Behera, S. Prasad, N. Mallick, and R. Sahoo, <em>Phys. Rev. D</em> <strong>108</strong>, 054022 (2023).</span>
+          </figcaption>
+        </figure>
+
+        <h3>Femtometer-Scale Snapshots: Probing Geometry via Anisotropic Flow</h3>
+        <p>
+          Ultra-relativistic collisions of Oxygen-16 ($^{16}\text{O}\text{--}^{16}\text{O}$) at LHC energies ($\sqrt{s_{\mathrm{NN}}} = 7\text{ TeV}$) occur within $10^{-24}$ seconds—far faster than the internal nuclear vibrational and rotational timescales. The collision effectively takes an instantaneous "snapshot" of the nuclear ground state.
+        </p>
+        <p>
+          In central collisions ($b \approx 0$), an ordinary spherical Woods-Saxon nucleus produces near-zero average triangularity ($\varepsilon_3 \approx 0$), with any residual asymmetry originating purely from random statistical nucleon position fluctuations. In contrast, the tetrahedral $\alpha$-structure of $^{16}\text{O}$ possesses an intrinsic 3D triangularity: when projected onto the transverse plane, the rigid orientation of the tetrahedron generates substantial triangular eccentricity ($\varepsilon_3$) and quadrangularity ($\varepsilon_4$).
+        </p>
+        <p>
+          Using a state-of-the-art relativistic hybrid framework (<strong>IP-Glasma + MUSIC + iSS + UrQMD</strong>), we showed that this geometric clustering produces:
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; line-height: 1.7;">
+          <li>A systematic enhancement of triangular flow ($v_3$) and quadrangular flow ($v_4$) in the most central collisions.</li>
+          <li>A distinctive rise in the flow ratio $v_3/v_2$ for the $0\text{--}10\%$ centrality class, providing a direct metric to distinguish clustered profiles from uniform liquid drops.</li>
+        </ul>
+
+        <h3>Anisotropic Flow Fluctuations: The Smoking Gun Signature</h3>
+        <p>
+          The most decisive signature of clustered nuclear geometry lies in <strong>relative anisotropic flow fluctuations</strong>:
+          $$
+          F(v_2) = \frac{\sqrt{\langle v_2^2 \rangle - \langle v_2 \rangle^2}}{\langle v_2 \rangle}
+          $$
+          In our paper published in <em>Physics Letters B</em> (2025), we discovered that for $\alpha$-clustered $^{16}\text{O}\text{--}^{16}\text{O}$ collisions, $F(v_2)$ is largest in the highest multiplicity events (driven by the varying random spatial orientations of the tetrahedron) and systematically decreases toward peripheral events. In stark contrast, a uniform Woods-Saxon nucleus displays the exact opposite centrality dependence! This divergence establishes flow fluctuations as an unambiguous experimental test for nuclear clustering at colliders.
+        </p>
+
+        <!-- Interactive 3D Alpha-Cluster Visualizer Widget -->
+        <div class="sim-widget" aria-label="Interactive 3D Nuclear Structure Simulator">
+          <div class="sim-toolbar">
+            <div class="sim-title">
+              <span>&#9883;</span> Interactive 3D Nuclear Structure &amp; Flow Simulator
+            </div>
+            <div class="sim-btn-group">
+              <button id="alpha-mode-cluster" class="sim-btn active" type="button">Tetrahedral &alpha;-Cluster</button>
+              <button id="alpha-mode-ws" class="sim-btn" type="button">Woods-Saxon Nucleus</button>
+              <button id="alpha-auto-rotate" class="sim-btn active" type="button">Auto-Rotate</button>
+            </div>
+          </div>
+
+          <div class="sim-canvas-container">
+            <canvas id="alpha-canvas" class="sim-canvas" width="600" height="300"></canvas>
+          </div>
+
+          <div class="sim-controls-panel">
+            <div class="sim-metrics-row">
+              <span class="sim-metric-chip" id="alpha-eps2-val">&epsilon;₂ = 0.210</span>
+              <span class="sim-metric-chip" id="alpha-eps3-val">&epsilon;₃ = 0.340</span>
+              <span class="sim-metric-chip" id="alpha-orient-val">&theta;x: 20&deg;, &theta;y: 31&deg;</span>
+              <button id="alpha-rand-orient" class="sim-fire-btn" type="button">&#8635; Random Collision Orientation</button>
+            </div>
+            <div id="alpha-geom-desc" class="sim-explanation">
+              <strong>Tetrahedral &alpha;-Clustered &sup1;&sup6;O:</strong> 4 compact &alpha;-particle cores ($^4\text{He}$) form a rigid tetrahedron. Drag with mouse/finger to rotate in 3D. Notice how the projected 2D transverse eccentricities ($\varepsilon_2, \varepsilon_3$) vary with orientation, driving anisotropic flow fluctuations ($F(v_2)$) in central O&ndash;O collisions (<em>Phys. Lett. B 860, 139145</em>).
+            </div>
+          </div>
         </div>
       </article>
 
-      <!-- Section 8: Doctoral Dissertation -->
+      <!-- Section 8: AI & Machine Learning in HEP -->
+      <article class="research-topic-card" id="sec-aiml" aria-labelledby="heading-aiml">
+        <span class="key-concept-tag">Artificial Intelligence & Machine Learning</span>
+        <h2 id="heading-aiml">8. Artificial Intelligence &amp; Machine Learning in High-Energy Physics</h2>
+        <p>
+          Modern high-energy collider experiments record billions of particle collisions, generating petabytes of raw data. Extracting delicate non-perturbative QCD signatures—such as emergent collective flow in tiny collision volumes or rare heavy-flavor hadrons—against overwhelming combinatorial backgrounds demands cutting-edge data science.
+        </p>
+        <p>
+          In my research program, I develop and deploy physics-informed Deep Neural Networks (DNNs), Convolutional Neural Networks (CNNs), and Gradient Boosted Decision Trees (XGBoost, LightGBM) to tackle two foundational challenges in collider physics:
+        </p>
+
+        <h3>A. Deep Learning Estimators for Elliptic Flow ($v_2$) &amp; Collision Centrality</h3>
+        <p>
+          In heavy-ion collisions, the collision impact parameter ($b$) cannot be measured directly, and standard multi-particle cumulant methods ($v_n\{2\}, v_n\{4\}$) suffer from non-flow contamination (resonance decays, dijets) and statistical starvation in small or peripheral collision systems.
+        </p>
+        <p>
+          To overcome these fundamental limitations, we designed a Deep Multilayer Perceptron architecture trained on final-state particle hit distributions in pseudorapidity and azimuth ($d^2N/d\eta d\varphi$, mapped onto 3072 input features):
+        </p>
+
+        <figure class="figure-embedded">
+          <img src="assets/research/dnn_architecture.png" alt="Deep Neural Network Architecture for Flow Estimation" style="max-height: 220px; width: auto;" loading="lazy" />
+          <figcaption class="figure-caption">
+            <strong>Figure 9: Deep Neural Network Architecture for Elliptic Flow ($v_2$) Estimation.</strong> 
+            Sequential feed-forward deep neural network: Input hit layer with 3072 features, followed by four dense hidden layers (128, 256, 256, and 256 neurons) with Rectified Linear Unit (ReLU) activations, mapping non-linearly to an output scalar predicting elliptic flow $v_2$ and impact parameter $b$.
+            <span class="figure-source">Source: N. Mallick, S. Prasad, A. N. Mishra, R. Sahoo, and G. G. Barnaf&ouml;ldi, <em>Phys. Rev. D</em> <strong>105</strong>, 114022 (2022); <em>Phys. Rev. D</em> <strong>107</strong>, 094001 (2023).</span>
+          </figcaption>
+        </figure>
+
+        <p>
+          Our deep learning model accurately predicts the event-by-event elliptic flow coefficient $v_2$ and collision impact parameter $b$ across diverse collision energies ($\sqrt{s_{\mathrm{NN}}} = 200\text{ GeV}$ to $5.02\text{ TeV}$), while successfully resolving the mass ordering and crossing of identified hadron species ($\pi^\pm, K^\pm, p+\bar{p}$) in heavy-ion collisions.
+        </p>
+
+        <h3>B. Topological Disentanglement: Prompt vs. Non-prompt $J/\psi$ &amp; Heavy Flavors</h3>
+        <p>
+          The $J/\psi$ meson—a bound state of charm and anti-charm quarks ($c\bar{c}$)—is a premier probe of Quark-Gluon Plasma formation and color screening. Experimentally, $J/\psi$ is detected through its dimuon ($\mu^+\mu^-$) or dielectron ($e^+e^-$) decay channel. However, measured inclusive yields contain two fundamentally distinct production mechanisms:
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; line-height: 1.7;">
+          <li>
+            <strong>Prompt $J/\psi$:</strong> Produced directly in the initial hard partonic collision ($t \approx 0$) or from feed-down of higher excited charmonia ($\psi(2S), \chi_c$), decaying right at the <strong>Primary Vertex (PV)</strong>.
+          </li>
+          <li>
+            <strong>Non-prompt $J/\psi$:</strong> Produced from the weak decay of long-lived beauty hadrons ($b \to J/\psi + X$). Because beauty hadrons have a mean decay length of $c\tau \approx 450\,\mu\text{m}$, they fly a measurable distance before decaying at a displaced <strong>Secondary Vertex (SV)</strong>.
+          </li>
+        </ul>
+
+        <figure class="figure-embedded">
+          <img src="assets/research/prompt_nonprompt_decay.png" alt="Decay topology cartoon of prompt vs nonprompt J/psi production" style="max-height: 380px; width: auto;" loading="lazy" />
+          <figcaption class="figure-caption">
+            <strong>Figure 10: Decay Topology of Prompt vs. Non-prompt $J/\psi$ Production.</strong> 
+            Topological schematic illustrating the separation of prompt $J/\psi \to \ell^+\ell^-$ (produced directly at the primary collision vertex) from non-prompt $J/\psi \to \ell^+\ell^-$ originating from the weak decay of a $b$-hadron at a secondary vertex displaced by decay length vector $\vec{L}$.
+            <span class="figure-source">Source: S. Prasad, N. Mallick, and R. Sahoo, <em>Phys. Rev. D</em> <strong>109</strong>, 014005 (2024); R. Sahoo, K. Goswami, and S. Prasad, <em>Phys. Rev. D</em> <strong>113</strong>, 094025 (2026).</span>
+          </figcaption>
+        </figure>
+
+        <p>
+          In our paper published in <em>Physical Review D</em> (2024), we demonstrated for the first time that implementing <strong>XGBoost</strong> and <strong>LightGBM</strong> classifiers trained on decay kinematics (decay length $L_{xy}$, pointing angle $\theta$, distance of closest approach DCA, invariant mass, and daughter lepton transverse momenta) achieves up to <strong>99% prediction accuracy</strong>. This machine learning methodology isolates prompt charmonium signals without requiring aggressive kinematic cuts, preserving vital low-$p_{\mathrm{T}}$ physics.
+        </p>
+
+        <!-- Interactive ML Classifier Sandbox -->
+        <div class="sim-widget" aria-label="Interactive Machine Learning Decay Topology Classifier">
+          <div class="sim-toolbar">
+            <div class="sim-title">
+              <span>&#9883;</span> Interactive ML Classifier: Prompt vs. Non-prompt $J/\psi$
+            </div>
+            <div class="sim-btn-group">
+              <button id="ml-preset-prompt" class="sim-btn" type="button">Preset: Prompt $J/\psi$</button>
+              <button id="ml-preset-nonprompt" class="sim-btn active" type="button">Preset: Non-prompt $b \to J/\psi$</button>
+              <button id="ml-preset-boundary" class="sim-btn" type="button">Decision Boundary</button>
+            </div>
+          </div>
+
+          <div class="sim-canvas-container">
+            <canvas id="ml-canvas" class="sim-canvas" width="600" height="260"></canvas>
+          </div>
+
+          <div class="sim-controls-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <span id="ml-class-badge" class="sim-class-badge badge-nonprompt">
+                &#9888; NON-PROMPT J/&psi; (Displaced Beauty Hadron Decay: b &rarr; J/&psi; + X)
+              </span>
+            </div>
+
+            <!-- Probability gauges -->
+            <div class="prob-meter-group">
+              <div class="prob-meter-item">
+                <span class="prob-meter-label">Prompt $J/\psi$ Score:</span>
+                <div class="prob-meter-track">
+                  <div id="ml-prob-prompt" class="prob-meter-fill fill-prompt" style="width: 7%;"></div>
+                </div>
+                <span id="ml-prob-prompt-text" class="prob-meter-pct">7%</span>
+              </div>
+              <div class="prob-meter-item">
+                <span class="prob-meter-label">Non-prompt ($b$) Score:</span>
+                <div class="prob-meter-track">
+                  <div id="ml-prob-nonprompt" class="prob-meter-fill fill-nonprompt" style="width: 93%;"></div>
+                </div>
+                <span id="ml-prob-nonprompt-text" class="prob-meter-pct">93%</span>
+              </div>
+            </div>
+
+            <div class="sim-slider-row">
+              <label for="ml-l-slider">Decay Flight Length ($L_{xy}$):</label>
+              <input id="ml-l-slider" type="range" min="0" max="1000" step="10" value="540" />
+              <strong id="ml-l-val" style="min-width: 70px; text-align: right;">540 &mu;m</strong>
+            </div>
+
+            <div class="sim-slider-row">
+              <label for="ml-dca-slider">Track Impact Parameter (DCA):</label>
+              <input id="ml-dca-slider" type="range" min="0" max="300" step="5" value="160" />
+              <strong id="ml-dca-val" style="min-width: 70px; text-align: right;">160 &mu;m</strong>
+            </div>
+
+            <div class="sim-slider-row">
+              <label for="ml-pt-slider">Transverse Momentum ($p_{\mathrm{T}}$):</label>
+              <input id="ml-pt-slider" type="range" min="1" max="25" step="0.5" value="9.5" />
+              <strong id="ml-pt-val" style="min-width: 70px; text-align: right;">9.5 GeV/c</strong>
+            </div>
+
+            <div id="ml-decision-desc" class="sim-explanation">
+              <strong>ML Decision: Non-prompt J/&psi; (93% confidence).</strong> The significant decay flight distance (540&mu;m) and displaced track DCA (160&mu;m) indicate origin from a long-lived beauty hadron ($b$-hadron, $c\tau \approx 450\,\mu\text{m}$), enabling precise measurement of beauty quark production cross sections and B-hadron feed-down (<em>Phys. Rev. D 109, 014005</em>).
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Section 9: Doctoral Dissertation -->
       <article class="research-topic-card" id="sec-dissertation" aria-labelledby="heading-dissertation">
         <span class="key-concept-tag">Doctoral Dissertation</span>
-        <h2 id="heading-dissertation">8. Doctoral Dissertation: Strangeness & Collectivity via Event-Shape Engineering</h2>
+        <h2 id="heading-dissertation">9. Doctoral Dissertation: Strangeness &amp; Collectivity via Event-Shape Engineering</h2>
         <p>
           The core foundations of my work on event topology, anisotropic flow, and strangeness enhancement were developed during my doctoral research at the <strong>Indian Institute of Technology Indore</strong> under the supervision of <strong>Prof. Raghunath Sahoo</strong>, successfully defended on <strong>06 October 2025</strong>.
         </p>
@@ -407,21 +586,21 @@
         </div>
       </article>
 
-      <!-- Section 9: Summary of Analysis Tools -->
+      <!-- Section 10: Summary of Analysis Tools -->
       <article class="research-topic-card" id="sec-tools" aria-labelledby="heading-tools">
         <span class="key-concept-tag">Methodology & Frameworks</span>
-        <h2 id="heading-tools">9. Scientific Computing & Analysis Stack</h2>
+        <h2 id="heading-tools">10. Scientific Computing &amp; Analysis Stack</h2>
         <p>
-          My daily research combines large-scale data processing on worldwide computing grids (WLCG) with phenomenological simulation:
+          My daily research combines large-scale data processing on worldwide computing grids (WLCG) with phenomenological simulation and machine learning architectures:
         </p>
         <div class="figure-grid">
           <div class="panel">
-            <h4>Experimental Analysis & Programming</h4>
-            <p>C++, Python, ROOT, RooFit, AliRoot/AliPhysics, O2 Framework (ALICE Run 3), Git, Linux High-Performance Computing (HPC), SLURM/PBS.</p>
+            <h4>Experimental Analysis &amp; Data Science</h4>
+            <p>C++, Python, ROOT, RooFit, AliRoot/AliPhysics, O2 Framework (ALICE Run 3), TensorFlow/PyTorch, Scikit-learn, XGBoost, LightGBM, Git, Linux HPC, SLURM/PBS.</p>
           </div>
           <div class="panel">
-            <h4>Event Generators & Hydrodynamics</h4>
-            <p>PYTHIA8 (Color Reconnection, Rope Hadronization), AMPT (String Melting), EPOS-LHC, HIJING, UrQMD, MUSIC (3+1D Hydrodynamics), IP-Glasma.</p>
+            <h4>Event Generators &amp; Hydrodynamics</h4>
+            <p>PYTHIA8 (Color Reconnection, Rope Hadronization), AMPT (String Melting), EPOS-LHC, HIJING, UrQMD, MUSIC (3+1D Hydrodynamics), IP-Glasma, iSS.</p>
           </div>
         </div>
       </article>
@@ -435,6 +614,8 @@
 
     <script src="scripts/nav.js"></script>
     <script src="scripts/collision-sim.js"></script>
+    <script src="scripts/alpha-cluster-sim.js"></script>
+    <script src="scripts/ml-classifier-sim.js"></script>
     <script>
       document.getElementById("year").textContent = String(new Date().getFullYear());
     </script>
