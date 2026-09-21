@@ -1067,6 +1067,141 @@ a:hover {
   border-color: rgba(14, 165, 233, 0.35);
 }
 
+/* Research Figures and Pedagogical Callouts */
+.figure-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--anim-med);
+}
+
+.figure-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.figure-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.figure-caption {
+  margin-top: 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text);
+  border-top: 1px solid var(--border-light);
+  padding-top: 0.65rem;
+}
+
+.figure-caption strong {
+  color: var(--slate-900);
+}
+
+.figure-source {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.35rem;
+  font-style: italic;
+}
+
+.figure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.research-callout {
+  background: linear-gradient(135deg, rgba(240, 249, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.research-callout h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--slate-900);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.research-callout p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--slate-700);
+}
+
+.key-concept-tag {
+  display: inline-block;
+  background: rgba(15, 106, 185, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(15, 106, 185, 0.25);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.thesis-reference-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: linear-gradient(135deg, #0f2744 0%, #1e3a5f 100%);
+  color: #ffffff;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+
+.thesis-reference-banner h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.thesis-reference-banner p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+}
+
+.thesis-reference-banner .btn-thesis {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all var(--anim-fast);
+  white-space: nowrap;
+}
+
+.thesis-reference-banner .btn-thesis:hover {
+  background: #7dd3fc;
+  transform: translateY(-1px);
+}
+
 /* CV Actions */
 .cv-actions {
   margin-bottom: 1.5rem;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Research overview: heavy-ion collisions, anisotropic flow coefficients, event-shape engineering, and jet correlation observables by Dr. Suraj Prasad."
+      content="Research overview: Quark-Gluon Plasma, anisotropic flow, strangeness enhancement, event-shape engineering, and machine learning at CERN LHC and RHIC by Dr. Suraj Prasad."
     />
     <title>Research | Dr. Suraj Prasad</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -17,14 +17,14 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Dr. Suraj Prasad" />
     <meta property="og:title" content="Research | Dr. Suraj Prasad" />
-    <meta property="og:description" content="Research overview: heavy-ion collisions, anisotropic flow coefficients, event-shape engineering, and jet correlation observables." />
+    <meta property="og:description" content="Exploring the Quark-Gluon Plasma, strangeness enhancement, collectivity, and event-shape engineering at LHC and RHIC." />
     <meta property="og:url" content="https://sprasadphy.github.io/homewebpage/research.html" />
     <meta property="og:image" content="https://sprasadphy.github.io/homewebpage/favicon.svg" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Research | Dr. Suraj Prasad" />
-    <meta name="twitter:description" content="Research overview: heavy-ion collisions, anisotropic flow coefficients, event-shape engineering, and jet correlation observables." />
+    <meta name="twitter:description" content="Exploring the Quark-Gluon Plasma, strangeness enhancement, collectivity, and event-shape engineering at LHC and RHIC." />
     <meta name="twitter:image" content="https://sprasadphy.github.io/homewebpage/favicon.svg" />
 
     <link rel="stylesheet" href="style.css" />
@@ -35,7 +35,10 @@
           displayMath: [["$$", "$$"], ["\\[", "\\]"]],
           macros: {
             sqrts: "\\sqrt{s}",
-            sqrtsnn: "\\sqrt{s_{\\mathrm{NN}}}"
+            sqrtsnn: "\\sqrt{s_{\\mathrm{NN}}}",
+            pT: "p_{\\mathrm{T}}",
+            Nch: "N_{\\mathrm{ch}}",
+            Nmpi: "N_{\\mathrm{mpi}}"
           }
         },
         options: {
@@ -69,100 +72,277 @@
     </header>
 
     <main class="container page-main">
-      <h1>Research</h1>
+      <h1>Research Program</h1>
       <p class="lead">
-        My research focuses on emergent collective behavior in QCD matter and on advanced
-        analysis strategies for collider data, combining precision observables with
-        machine-learning-assisted reconstruction and classification.
+        Investigating the fundamental building blocks of matter, emergent collective phenomena, and the 
+        primordial Quark-Gluon Plasma through high-energy collider experiments and advanced computational methods.
       </p>
 
-      <section class="content-section" aria-labelledby="topic-flow">
-        <h2 id="topic-flow">Anisotropic Flow and Initial-State Geometry</h2>
-        <p>
-          A key objective is to quantify how initial geometric anisotropies are mapped into
-          final-state momentum anisotropies. I study the harmonic flow coefficients
-          $v_n$ through multi-particle cumulants and differential analyses in transverse
-          momentum and centrality.
-        </p>
-        <p>
-          The azimuthal particle distribution is commonly expressed as
-          $$
-          \frac{dN}{d\varphi} \propto 1 + 2\sum_{n=1}^{\infty} v_n \cos\left[n(\varphi - \Psi_n)\right],
-          $$
-          where $\Psi_n$ denotes the event-plane angle of harmonic order $n$.
-        </p>
-      </section>
-
-      <section class="content-section" aria-labelledby="topic-jets">
-        <h2 id="topic-jets">Jet and Two-Particle Correlations</h2>
-        <p>
-          I investigate near-side and away-side correlation structures to disentangle
-          collective backgrounds from jet-induced signals. This includes studies of
-          angular broadening, yield modifications, and path-length dependent quenching
-          signatures.
-        </p>
-      </section>
-
-      <section class="content-section" aria-labelledby="topic-event-shape">
-        <h2 id="topic-event-shape">Event-Shape Engineering and Topology</h2>
-        <p>
-          A central line of my work is event topology characterization using observables
-          such as transverse spherocity and flattenicity. These techniques are used to
-          classify final states and isolate underlying production mechanisms from
-          soft-QCD to heavy-flavor sectors.
-        </p>
-      </section>
-
-      <section class="content-section" aria-labelledby="topic-alice">
-        <h2 id="topic-alice">ALICE Collaboration Research</h2>
-        <div class="panel">
-          <h3>Flattenicity-Dependent Particle Production in pp Collisions</h3>
-          <p>
-            Experimental measurement of charged-particle flattenicity in proton-proton collisions at $\sqrt{s} = 13\text{ TeV}$ with the ALICE detector at the CERN Large Hadron Collider. Flattenicity isolates events dominated by hard partonic scatterings from the soft underlying event, offering stringent tests for multi-parton interaction and string reconnection models in small collision systems.
-          </p>
-          <p style="margin-top: 0.75rem;">
-            <strong>Published Article:</strong> ALICE Collaboration, <em>Particle production versus charged-particle flattenicity in pp collisions at $\sqrt{s}=13\text{ TeV}$</em>, <a href="https://doi.org/10.1103/PhysRevD.111.012010" target="_blank" rel="noopener noreferrer">Phys. Rev. D <strong>111</strong>, 012010 (2025)</a>.
-          </p>
+      <!-- Doctoral Thesis Banner -->
+      <section class="thesis-reference-banner" aria-label="Doctoral Dissertation Reference">
+        <div>
+          <span class="key-concept-tag" style="background: rgba(56, 189, 248, 0.2); color: #7dd3fc; border-color: rgba(56, 189, 248, 0.4);">Ph.D. Dissertation</span>
+          <h3>Exploring the Strangeness Enhancement and Collectivity in pp and Pb-Pb Collisions at the LHC Using Event Shape Engineering</h3>
+          <p>Indian Institute of Technology Indore (Defended Oct 2025) &bull; Supervisor: Prof. Raghunath Sahoo</p>
+        </div>
+        <div>
+          <a class="btn-thesis" href="https://doi.org/10.17181/9v1cx-sq289" target="_blank" rel="noopener noreferrer">
+            <span>View Thesis (DOI)</span> &rarr;
+          </a>
         </div>
       </section>
 
-      <section class="content-section" aria-labelledby="topic-methods">
-        <h2 id="topic-methods">Methods and Analysis Infrastructure</h2>
+      <!-- Section 1: The Primordial Universe -->
+      <section class="content-section" aria-labelledby="sec-primordial">
+        <h2 id="sec-primordial">1. The Big Picture: Recreating the Primordial Universe</h2>
         <p>
-          My workflow combines robust event and track selection, systematic uncertainty
-          propagation, and reproducible data-processing scripts suitable for collaboration
-          scale analyses. Emphasis is placed on transparent documentation and portability
-          of results across computing environments.
+          <em>What is the universe made of? How did it come into existence? How does matter behave under the most extreme conditions imaginable?</em> 
+          These fundamental questions drive the journey of high-energy nuclear physics.
         </p>
         <p>
-          Programming and analysis stack includes C/C++, Python, ROOT, machine-learning
-          workflows, and Monte Carlo/event generators such as PYTHIA8, AMPT, HIJING,
-          EPOS(-LHC), MUSIC, IP-Glasma, and UrQMD.
+          In our everyday world, the matter around us is composed of atoms, whose nuclei contain protons and neutrons (hadrons). In turn, hadrons are formed of elementary constituents known as <strong>quarks</strong>, bound together by the exchange of gauge bosons called <strong>gluons</strong>. The governing theory of this strong nuclear force is <strong>Quantum Chromodynamics (QCD)</strong>. 
+        </p>
+        <p>
+          Unlike electromagnetic photons, gluons carry the "color charge" of the strong interaction and can interact among themselves. This self-interaction causes a phenomenon called <strong>color confinement</strong>: under normal conditions, quarks and gluons cannot exist as free particles. However, QCD also possesses <strong>asymptotic freedom</strong>: at extraordinarily high temperatures or energy densities, the interaction strength weakens, causing hadrons to melt into a deconfined, thermalised state of matter: the <strong>Quark-Gluon Plasma (QGP)</strong>.
+        </p>
+
+        <div class="research-callout">
+          <h4>&#128161; Key Concept for Interdisciplinary Readers: What is QGP?</h4>
+          <p>
+            The Quark-Gluon Plasma existed naturally in the first few microseconds ($\sim 10^{-6}\text{ s}$) after the Big Bang before cooling into ordinary protons and neutrons. By accelerating heavy atomic nuclei (such as Lead-208, $^{208}\text{Pb}$) to $99.9999991\%$ the speed of light at the <strong>Large Hadron Collider (CERN)</strong> and the <strong>Relativistic Heavy-Ion Collider (RHIC, BNL)</strong>, we collide them to recreate temperatures exceeding $2\times 10^{12}\text{ K}$ (more than $100,000$ times hotter than the center of the Sun), liberating quarks and gluons into a laboratory-scale "Little Bang".
+          </p>
+        </div>
+
+        <figure class="figure-card">
+          <img src="assets/research/qcd_phase_diagram.png" alt="QCD Phase Diagram in Temperature vs Baryon Chemical Potential" loading="lazy" />
+          <figcaption class="figure-caption">
+            <strong>Figure 1: The Phase Diagram of Strongly Interacting Matter.</strong> 
+            A schematic representation of the QCD phase transition in the plane of temperature ($T$) versus baryon chemical potential ($\mu_{\mathrm{B}}$). Relativistic heavy-ion collisions at top LHC energies probe the high-temperature, nearly zero baryon net-density region ($\mu_{\mathrm{B}} \approx 0$), characterized by an analytic crossover transition into the Quark-Gluon Plasma.
+            <span class="figure-source">Source: Adapted from ALICE Collaboration / S. Prasad, Ph.D. Thesis, Chapter 1 (2025).</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Section 2: Anatomy of a Collision -->
+      <section class="content-section" aria-labelledby="sec-evolution">
+        <h2 id="sec-evolution">2. Anatomy of a Little Bang: Evolution of a Heavy-Ion Collision</h2>
+        <p>
+          The Quark-Gluon Plasma is extremely fleeting: it exists for only about $10^{-23}$ seconds inside a microscopic volume of a few tens of femtometers ($1\text{ fm} = 10^{-15}\text{ m}$). Because it cannot be photographed or observed directly, physicists reconstruct its properties by tracing its complete chronological evolution:
+        </p>
+        <ol style="margin-left: 1.5rem; margin-bottom: 1.25rem; line-height: 1.7;">
+          <li>
+            <strong>Initial State & Pre-Equilibrium ($t < 1\text{ fm}/c$):</strong> 
+            Two Lorentz-contracted nuclei collide, depositing immense energy density. High-energy partons undergo initial hard scatterings, while fluctuating nucleon positions establish the initial spatial geometry.
+          </li>
+          <li>
+            <strong>Quark-Gluon Plasma & Relativistic Hydrodynamics ($1 \lesssim t \lesssim 10\text{ fm}/c$):</strong> 
+            The dense medium thermalises and expands rapidly under intense internal pressure gradients. Remarkably, the QGP expands not as a gas, but as an <strong>almost perfect fluid</strong> with an extremely small ratio of shear viscosity to entropy density ($\eta/s \approx 1/4\pi$), near the quantum lower bound.
+          </li>
+          <li>
+            <strong>Hadronization & Chemical Freeze-out ($T \approx 155\text{ MeV}$):</strong> 
+            As the fireball expands and cools, quarks and gluons recombine into hadrons. Inelastic collisions cease at the <em>chemical freeze-out temperature</em> ($T_{\mathrm{ch}}$), fixing the relative abundances of all particle species.
+          </li>
+          <li>
+            <strong>Kinetic Freeze-out & Detection ($T \approx 90\text{--}120\text{ MeV}$):</strong> 
+            Elastic collisions stop, fixing the momentum distributions of all emitted particles. The stable particles and their decay products then travel outward into massive detectors such as ALICE.
+          </li>
+        </ol>
+
+        <figure class="figure-card">
+          <img src="assets/research/qgp_evolution.png" alt="Timeline of a Relativistic Heavy-Ion Collision" loading="lazy" />
+          <figcaption class="figure-caption">
+            <strong>Figure 2: Spatiotemporal Evolution of a Relativistic Heavy-Ion Collision.</strong> 
+            Chronological stages from initial Lorentz-contracted nuclear overlap, through pre-equilibrium and relativistic hydrodynamic expansion of the Quark-Gluon Plasma, to hadronization, chemical and kinetic freeze-out, and final detection.
+            <span class="figure-source">Source: Adapted from ALICE Collaboration / S. Prasad, Ph.D. Thesis, Chapter 1 (2025).</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Section 3: Experimental Signatures -->
+      <section class="content-section" aria-labelledby="sec-signatures">
+        <h2 id="sec-signatures">3. Diagnosing the Fireball: Key Experimental Signatures</h2>
+        <p>
+          To diagnose whether a Quark-Gluon Plasma formed and to measure its physical properties, my research focuses on two paramount experimental signatures:
+        </p>
+
+        <h3>A. Anisotropic Flow ($v_n$): Transforming Geometry into Momentum</h3>
+        <p>
+          When two spherical nuclei collide with a non-zero impact parameter (non-central collision), their spatial overlap region is not circular, but rather almond-shaped (anisotropic). This spatial anisotropy causes asymmetric pressure gradients: the pressure gradient is steepest along the shortest axis of the almond.
+        </p>
+        <p>
+          As the fluid expands, these pressure gradients push particles outward faster along the reaction plane than perpendicular to it, translating initial spatial coordinate eccentricity ($\varepsilon_n$) into a final azimuthal momentum anisotropy of produced particles ($v_n$).
+        </p>
+        <p>
+          Mathematically, the azimuthal distribution of produced particles is decomposed into a Fourier series:
+          $$
+          \frac{dN}{d\varphi} \propto 1 + 2\sum_{n=1}^{\infty} v_n \cos\left[n(\varphi - \Psi_n)\right]
+          $$
+          where $\varphi$ is the azimuthal emission angle, $\Psi_n$ is the $n$-th harmonic symmetry plane, and:
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; line-height: 1.7;">
+          <li><strong>$v_2$ (Elliptic Flow):</strong> Probes the overall almond-shaped elliptic eccentricity ($\varepsilon_2$) and the equation of state of the medium.</li>
+          <li><strong>$v_3$ (Triangular Flow):</strong> Originates from event-by-event quantum fluctuations in the initial nucleon positions ($\varepsilon_3$).</li>
+          <li><strong>Higher Harmonics ($v_4, v_5$):</strong> Sensitive to viscous damping and non-linear mode-coupling effects in relativistic hydrodynamics.</li>
+        </ul>
+
+        <figure class="figure-card">
+          <img src="assets/research/vn_coordinate_system.png" alt="Coordinate transformation from spatial anisotropy to momentum anisotropy" loading="lazy" />
+          <figcaption class="figure-caption">
+            <strong>Figure 3: Transformation of Initial Spatial Geometry into Final Momentum Anisotropy.</strong> 
+            The collision coordinate system illustrating how initial coordinate-space eccentricity ($\varepsilon_2$) creates steep pressure gradients along the in-plane direction, driving anisotropic hydrodynamic expansion and producing elliptic flow ($v_2$) in momentum space.
+            <span class="figure-source">Source: S. Prasad, Ph.D. Thesis, Chapter 1 (2025).</span>
+          </figcaption>
+        </figure>
+
+        <h3>B. Strangeness Enhancement: A Thermometer of Deconfinement</h3>
+        <p>
+          Ordinary matter is made entirely of first-generation quarks: up ($u$) and down ($d$). Strange quarks ($s$), being heavier ($m_s \sim 95\text{ MeV}/c^2$), are suppressed in ordinary elementary interactions due to energy thresholds.
+        </p>
+        <p>
+          However, inside a hot, deconfined QGP, abundant high-energy gluons interact via thermal fusion ($gg \to s\bar{s}$), rapidly producing strange and anti-strange quark pairs until chemical equilibrium is reached. Consequently, the yields of strange and multi-strange hadrons—such as $K^0_{\mathrm{S}}(d\bar{s})$, $\Lambda(uds)$, $\Xi^-(dss)$, and $\Omega^-(sss)$—normalized to non-strange pions ($\pi$), are substantially enhanced in heavy-ion collisions compared to baseline proton-proton collisions.
         </p>
       </section>
 
-      <section class="content-section" aria-labelledby="topic-talks">
-        <h2 id="topic-talks">Selected Recent Talks</h2>
-        <ul class="highlights-list">
+      <!-- Section 4: The Small Systems Puzzle -->
+      <section class="content-section" aria-labelledby="sec-small-systems">
+        <h2 id="sec-small-systems">4. The "Small Systems" Puzzle at the LHC</h2>
+        <p>
+          Historically, the high-energy physics community believed that QGP could only form in violent collisions of large nuclei (such as Lead or Gold), whereas proton-proton ($pp$) collisions were treated as simple baseline vacuum systems.
+        </p>
+        <p>
+          However, experiments at the LHC uncovered a startling discovery: <strong>high-multiplicity proton-proton collisions exhibit unmistakable heavy-ion-like collective signatures!</strong> These include:
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; line-height: 1.7;">
+          <li>Non-zero elliptic flow ($v_2$) and ridge-like long-range two-particle angular correlations.</li>
+          <li>Characteristic mass-dependent push in average transverse momentum ($\langle p_{\mathrm{T}} \rangle$), indicative of radial hydrodynamic flow.</li>
+          <li>A smooth, continuous increase in strange and multi-strange hadron-to-pion ratios from $pp$ to $p\text{--Pb}$ and $\text{Pb}\text{--Pb}$ collisions.</li>
+        </ul>
+        <p>
+          Yet other classic heavy-ion signatures, such as jet quenching and heavy-quarkonium suppression, remain undetected in small systems. This raises one of the most compelling active questions in high-energy nuclear physics: 
+          <em>Are we witnessing the creation of the smallest droplets of Quark-Gluon Plasma in proton collisions, or are these phenomena driven by microscopic multi-parton interactions (MPI), color reconnection, and rope hadronization?</em>
+        </p>
+      </section>
+
+      <!-- Section 5: Event-Shape Engineering -->
+      <section class="content-section" aria-labelledby="sec-ese">
+        <h2 id="sec-ese">5. Event-Shape Engineering: Piercing Multiplicity Bias</h2>
+        <p>
+          In collider experiments, collisions are traditionally categorized by charged-particle multiplicity ($N_{\mathrm{ch}}$). However, our investigations demonstrated that multiplicity selections suffer from severe <strong>selection bias</strong>: high multiplicity can be triggered either by a genuine, high-density soft thermal fireball OR by violent, multiple hard-scattering sprays (multi-jet topologies).
+        </p>
+        <p>
+          To untangle these physics mechanisms, my research develops and utilizes <strong>Event-Shape Engineering (ESE)</strong> with topological event classifiers:
+        </p>
+
+        <div class="figure-grid">
+          <div class="panel">
+            <h4>Transverse Spherocity ($S_0$)</h4>
+            <p>
+              Classifies events based on the transverse momentum distribution with respect to a unit vector $\hat{n}$:
+              $$
+              S_0 = \frac{\pi^2}{4} \min_{\hat{n}} \left( \frac{\sum_i |\vec{p}_{\mathrm{T},i} \times \hat{n}|}{\sum_i p_{\mathrm{T},i}} \right)^2
+              $$
+              Events with $S_0 \to 0$ are <strong>jetty</strong> (dominated by hard, back-to-back QCD dijets), while events with $S_0 \to 1$ are <strong>isotropic</strong> (azimuthally uniform, high-entropy, thermal-like emissions).
+            </p>
+          </div>
+          <div class="panel">
+            <h4>Charged-Particle Flattenicity ($\rho_{\mathrm{ch}}$)</h4>
+            <p>
+              A novel grid-based classifier dividing $(\eta, \varphi)$ phase space into equal cells. By measuring the variance of cell multiplicities, flattenicity isolates events governed by genuine Multi-Parton Interactions (MPI) while remaining free from auto-correlation biases and jet contamination.
+            </p>
+          </div>
+        </div>
+
+        <figure class="figure-card">
+          <img src="assets/research/jetty_isotropic_cartoon.png" alt="Cartoon of jetty vs isotropic event topologies" loading="lazy" />
+          <figcaption class="figure-caption">
+            <strong>Figure 4: Event-Shape Topologies in High-Energy Collisions.</strong> 
+            A conceptual illustration contrasting a 'jetty' event (left, $S_0 \to 0$), dominated by hard collimated back-to-back partonic scatterings, with an 'isotropic' event (right, $S_0 \to 1$), where particles are emitted uniformly in azimuth, mimicking thermalized collective behavior.
+            <span class="figure-source">Source: S. Prasad et al., Ph.D. Thesis, Chapter 2 (2025) / Phys. Rev. D (2024).</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Section 6: Experimental Work at ALICE Run 3 -->
+      <section class="content-section" aria-labelledby="sec-alice">
+        <h2 id="sec-alice">6. Experimental Analysis with ALICE at CERN LHC Run 3</h2>
+        <p>
+          Beyond phenomenological modeling, my work directly engages with experimental data collected by the <strong>ALICE (A Large Ion Collider Experiment)</strong> detector during LHC Run 3 at a record center-of-mass energy of $\sqrt{s} = 13.6\text{ TeV}$.
+        </p>
+        <p>
+          My experimental focus includes:
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; line-height: 1.7;">
           <li>
-            ATHIC 2025: Effects of alpha-clustered $^{16}$O structure in O-O collisions
-            within CGC+Hydro framework.
+            <strong>Neutral Strange Particle Reconstruction ($K^0_{\mathrm{S}}$ and $\Lambda+\bar{\Lambda}$):</strong> 
+            Exploiting characteristic $V^0$ decay topologies ($K^0_{\mathrm{S}} \to \pi^+ \pi^-$ and $\Lambda \to p \pi^-$) reconstructed via secondary vertex finding.
           </li>
           <li>
-            QM2025 (Frankfurt): Flow fluctuations probing exotic $\alpha$-cluster profiles
-            in $^{16}$O-$^{16}$O collisions.
+            <strong>Flattenicity-Dependent Production in Run 3:</strong> 
+            Measuring transverse momentum ($p_{\mathrm{T}}$) spectra and yield ratios as a function of $(1-\rho_{\mathrm{ch}})$ to isolate soft particle production mechanisms from hard QCD backgrounds.
           </li>
           <li>
-            Wigner RCP (Aug 2025): Impact of elliptic flow on higher-order flow
-            coefficients at LHC energies.
+            <strong>Detector Tracking & PID:</strong> 
+            Utilizing the upgraded Monolithic Active Pixel Sensor-based Inner Tracking System (ITS2) for precision vertexing and the continuous-readout Time Projection Chamber (TPC) for ionization energy-loss ($dE/dx$) particle identification.
           </li>
         </ul>
+
+        <figure class="figure-card">
+          <img src="assets/research/alice_run3_labels.jpg" alt="Schematic layout of ALICE detector during Run 3" loading="lazy" />
+          <figcaption class="figure-caption">
+            <strong>Figure 5: The ALICE Experiment at the CERN Large Hadron Collider.</strong> 
+            Schematic layout of the ALICE detector during LHC Run 3, highlighting the central barrel tracking systems—including the upgraded Inner Tracking System (ITS2) and the Time Projection Chamber (TPC)—enabling continuous readout and high-precision vertex reconstruction.
+            <span class="figure-source">Source: Adapted from ALICE Collaboration / S. Prasad, Ph.D. Thesis, Chapter 3 (2025).</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Section 7: Nuclear Structure & AI -->
+      <section class="content-section" aria-labelledby="sec-frontiers">
+        <h2 id="sec-frontiers">7. Frontiers: Nuclear Clustering & Artificial Intelligence</h2>
+        
+        <div class="panel" style="margin-bottom: 1.5rem;">
+          <h3>A. Exotic $\alpha$-Clustering in Light Nuclei ($^{16}\text{O}\text{--}^{16}\text{O}$)</h3>
+          <p>
+            Do light nuclei behave as uniform liquid drops of nucleons, or do they organize into geometric sub-clusters of $\alpha$-particles ($^4\text{He}$)? 
+            In collaboration with theorists and experimentalists, we probe the tetrahedral $\alpha$-clustered nuclear structure of Oxygen-16 by measuring harmonic flow fluctuations ($v_2, v_3, v_4$) in $^{16}\text{O}\text{--}^{16}\text{O}$ collisions at LHC energies within hydrodynamic and transport frameworks (CGC+Hydro, AMPT).
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>B. Machine Learning for Collider Physics</h3>
+          <p>
+            To address the computational complexity of modern collider data, I design deep learning models (Convolutional Neural Networks, Deep Multilayer Perceptrons, and Gradient Boosted Decision Trees):
+          </p>
+          <ul style="margin-left: 1.5rem; margin-top: 0.5rem; line-height: 1.6;">
+            <li><strong>Impact Parameter ($b$) Estimation:</strong> Reconstructing collision centrality and impact parameter event-by-event directly from final-state detector hit profiles.</li>
+            <li><strong>Heavy-Flavor Identification:</strong> Classifying prompt vs. non-prompt $J/\psi$ and bottom-hadron decay kinematics in proton-proton collisions.</li>
+            <li><strong>Deep Learning Flow Estimators:</strong> Formulating non-linear neural estimators to extract elliptic flow $v_2$ across low-multiplicity environments where conventional cumulant techniques degrade.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 8: Summary of Analysis Tools -->
+      <section class="content-section" aria-labelledby="sec-tools">
+        <h2 id="sec-tools">8. Scientific Computing & Analysis Stack</h2>
+        <p>
+          My daily research combines large-scale data processing on computing grids (WLCG) with theoretical simulation:
+        </p>
+        <div class="figure-grid">
+          <div class="panel">
+            <h4>Experimental Analysis & Programming</h4>
+            <p>C++, Python, ROOT, RooFit, AliRoot/AliPhysics, O2 Framework (ALICE Run 3), Git, Linux High-Performance Computing (HPC), SLURM/PBS.</p>
+          </div>
+          <div class="panel">
+            <h4>Event Generators & Hydrodynamics</h4>
+            <p>PYTHIA8 (Color Reconnection, Rope Hadronization), AMPT (String Melting), EPOS-LHC, HIJING, UrQMD, MUSIC (3+1D Hydrodynamics), IP-Glasma.</p>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>© <span id="year"></span> Suraj Prasad</p>
+        <p>© <span id="year"></span> Dr. Suraj Prasad &bull; HUN-REN Wigner Research Centre for Physics</p>
       </div>
     </footer>
 
