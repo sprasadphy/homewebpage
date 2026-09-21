@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="nucleusGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef7b45" />
+      <stop offset="100%" stop-color="#d64545" />
+    </linearGradient>
+    <linearGradient id="orbitGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f6ab9" />
+      <stop offset="100%" stop-color="#10958a" />
+    </linearGradient>
+    <linearGradient id="orbitGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6f42c1" />
+      <stop offset="100%" stop-color="#0f6ab9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle for contrast on any tab bar -->
+  <rect width="64" height="64" rx="14" fill="#0b1726" />
+
+  <!-- Collision / orbital rings -->
+  <ellipse cx="32" cy="32" rx="24" ry="9" fill="none" stroke="url(#orbitGrad1)" stroke-width="2.5" transform="rotate(-30 32 32)" stroke-dasharray="75 8" opacity="0.9" />
+  <ellipse cx="32" cy="32" rx="24" ry="9" fill="none" stroke="url(#orbitGrad2)" stroke-width="2.5" transform="rotate(30 32 32)" stroke-dasharray="75 8" opacity="0.9" />
+  <ellipse cx="32" cy="32" rx="24" ry="9" fill="none" stroke="#ef7b45" stroke-width="2" transform="rotate(90 32 32)" stroke-dasharray="60 12" opacity="0.75" />
+
+  <!-- Orbiting particles -->
+  <circle cx="12" cy="22" r="3.2" fill="#10958a" />
+  <circle cx="52" cy="42" r="3.2" fill="#3f51b5" />
+  <circle cx="32" cy="9" r="3" fill="#f2b705" />
+
+  <!-- Central interaction point (QGP / Collision point) -->
+  <circle cx="32" cy="32" r="7" fill="url(#nucleusGrad)" />
+  <circle cx="32" cy="32" r="3" fill="#ffffff" />
+</svg>

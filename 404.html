@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page not found - Dr. Suraj Prasad's Academic Website"
+    />
+    <title>404: Page Not Found | Dr. Suraj Prasad</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#0f6ab9" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-rainbow">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="site-title" href="index.html">Suraj Prasad</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          Menu
+        </button>
+        <nav id="primary-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main" style="text-align: center; padding: 3.5rem 1.5rem;">
+      <h1 style="font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--accent);">404</h1>
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem;">Page Not Found</h2>
+      <p style="max-width: 540px; margin: 0 auto 2rem; color: var(--muted); line-height: 1.6;">
+        The page you are looking for might have been moved, renamed, or is temporarily unavailable.
+        Please use the navigation links above or return to the homepage.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="pub-link" style="display: inline-block; padding: 0.75rem 1.5rem; font-weight: 600;">Go to Homepage</a>
+        <a href="publications.html" class="pub-link" style="display: inline-block; padding: 0.75rem 1.5rem; font-weight: 600;">Browse Publications</a>
+        <a href="cv.html" class="pub-link" style="display: inline-block; padding: 0.75rem 1.5rem; font-weight: 600;">View CV</a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Dr. Suraj Prasad</p>
+      </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
