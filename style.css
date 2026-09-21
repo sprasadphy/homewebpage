@@ -1003,6 +1003,260 @@ p {
   }
 }
 
+/* Profile Photo */
+.hero-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-avatar {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3.5px solid var(--accent);
+  box-shadow: 0 8px 24px rgba(15, 106, 185, 0.22);
+  flex-shrink: 0;
+  transition: transform var(--anim-med) var(--ease-smooth);
+}
+
+.hero-avatar:hover {
+  transform: scale(1.04);
+}
+
+.hero-profile-text {
+  flex: 1;
+}
+
+.cv-avatar {
+  width: 125px;
+  height: 125px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+/* Scientific Metrics Dashboard */
+.metrics-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.metric-kpi-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.1rem;
+  box-shadow: 0 4px 16px rgba(13, 39, 73, 0.05);
+  transition: transform var(--anim-med) var(--ease-smooth), box-shadow var(--anim-med) var(--ease-smooth);
+}
+
+.metric-kpi-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(15, 106, 185, 0.12);
+}
+
+.metric-kpi-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+}
+
+.metric-kpi-value {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.metric-kpi-label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-top: 0.35rem;
+}
+
+.metric-kpi-sub {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.35rem;
+}
+
+/* Metrics Chart */
+.metric-chart-wrapper {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0 2rem;
+  box-shadow: 0 4px 16px rgba(13, 39, 73, 0.05);
+}
+
+.metric-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.metric-chart-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.metric-chart-toggles {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.chart-toggle-btn {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--muted);
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--anim-fast) ease;
+}
+
+.chart-toggle-btn:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.chart-toggle-btn.active {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+
+.metric-svg-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.metric-chart-svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chart-bar {
+  cursor: pointer;
+  transition: opacity var(--anim-fast) ease;
+}
+
+.chart-bar:hover {
+  opacity: 0.82;
+}
+
+/* Top Cited Section */
+.top-cited-section {
+  margin: 1.5rem 0 2rem;
+}
+
+.top-cited-section h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.85rem;
+}
+
+.top-cited-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.top-cited-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color var(--anim-fast) ease, transform var(--anim-fast) ease;
+}
+
+.top-cited-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.top-cited-card a {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  line-height: 1.4;
+  margin: 0.5rem 0;
+}
+
+.top-cited-card a:hover {
+  color: var(--accent);
+}
+
+.top-cited-year {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Citation & Award Badges */
+.citation-count-badge,
+.pub-cite-badge {
+  display: inline-block;
+  background: var(--green-soft);
+  color: var(--green-deep);
+  border: 1px solid rgba(20, 154, 115, 0.35);
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  width: fit-content;
+}
+
+.pub-cite-badge {
+  background: #eef8ff;
+  color: var(--accent);
+  border-color: rgba(15, 106, 185, 0.3);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.award-badge {
+  display: inline-block;
+  background: var(--yellow-soft);
+  color: var(--yellow-deep);
+  border: 1px solid rgba(242, 183, 5, 0.4);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
 .footer-wrap {
   display: flex;
   justify-content: space-between;
@@ -1051,6 +1305,18 @@ p {
 
   .hero {
     padding-top: 2.5rem;
+  }
+
+  .hero-profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .cv-avatar {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem;
   }
 
   .hero .container,

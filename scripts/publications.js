@@ -475,6 +475,17 @@
         linksWrap.appendChild(arxivLink);
       }
 
+      var cites = metadata.citation_count;
+      if (typeof cites === "number" && cites > 0) {
+        var indep = metadata.citation_count_without_self_citations;
+        var citeLabel = cites + " citation" + (cites === 1 ? "" : "s");
+        if (typeof indep === "number" && indep > 0 && indep !== cites) {
+          citeLabel += " (" + indep + " indep.)";
+        }
+        var citeBadge = createElement("span", "pub-cite-badge", citeLabel);
+        linksWrap.appendChild(citeBadge);
+      }
+
       item.appendChild(linksWrap);
       pubList.appendChild(item);
     });
