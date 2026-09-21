@@ -131,9 +131,21 @@ def extract_authors(cleaned: str, title: str) -> list[dict[str, str]]:
     return authors
 
 
-def classify_year(text: str) -> str | None:
-    year_match = re.search(r"(19|20)\d{2}", text)
-    return year_match.group(0) if year_match else None
+def classify_date(text: str) -> tuple[str | None, str | None]:
+    # 1. Check for journal publication year in parentheses, e.g. (2026)
+    m = re.search(r"\((19\d{2}|20\d{2})\)", text)
+    if m:
+        return m.group(1), f"{m.group(1)}-01-01"
+    # 2. Check for arXiv:YYMM
+    ar = re.search(r"arxiv:(\d{2})(\d{2})\.", text, re.IGNORECASE)
+    if ar:
+        yy, mm = ar.group(1), ar.group(2)
+        return f"20{yy}", f"20{yy}-{mm}-01"
+    # 3. Check for standalone 4-digit year
+    m = re.search(r"\b(19\d{2}|20\d{2})\b", text)
+    if m:
+        return m.group(1), f"{m.group(1)}-01-01"
+    return None, None
 
 
 def build_record(item_text: str, section: str, index: int, citation_index: dict[str, dict[str, Any]]) -> dict[str, Any]:
@@ -143,8 +155,9 @@ def build_record(item_text: str, section: str, index: int, citation_index: dict[
 
     doc_type = ["conference paper"] if section == "conference" else ["article"]
     refereed = section != "communicated"
-    year = classify_year(link_label or cleaned)
-    earliest_date = f"{year}-01-01" if year else None
+    year, earliest_date = classify_date(cleaned)
+    if not earliest_date and link_label:
+        year, earliest_date = classify_date(link_label)
     venue = (link_label or "").strip()
 
     dois = []
@@ -233,22 +246,20 @@ def parse_publications_tex(tex_text: str, citation_index: dict[str, dict[str, An
     communicated_items = split_items(blocks[1])
     conference_items = split_items(blocks[2])
 
-    records: list[dict[str, Any]] = []
-    idx = 0
+    def rec_sort_key(r: dict[str, Any]) -> str:
+        m = r.get("metadata", {})
+        return m.get("earliest_date") or m.get("preprint_date") or "1900-01-01"
 
-    for text in published_items:
-        idx += 1
-        records.append(build_record(text, "published", idx, citation_index))
+    pub_records = [build_record(text, "published", i + 1, citation_index) for i, text in enumerate(published_items)]
+    pub_records.sort(key=rec_sort_key, reverse=True)
 
-    for text in communicated_items:
-        idx += 1
-        records.append(build_record(text, "communicated", idx, citation_index))
+    comm_records = [build_record(text, "communicated", i + 1, citation_index) for i, text in enumerate(communicated_items)]
+    comm_records.sort(key=rec_sort_key, reverse=True)
 
-    for text in conference_items:
-        idx += 1
-        records.append(build_record(text, "conference", idx, citation_index))
+    conf_records = [build_record(text, "conference", i + 1, citation_index) for i, text in enumerate(conference_items)]
+    conf_records.sort(key=rec_sort_key, reverse=True)
 
-    return records
+    return pub_records + comm_records + conf_records
 
 
 def compute_metrics(inspire_hits: list[dict[str, Any]], tex_records: list[dict[str, Any]]) -> dict[str, Any]:

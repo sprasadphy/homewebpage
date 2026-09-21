@@ -114,15 +114,52 @@
 
   function getYear(metadata) {
     var dateString = metadata.earliest_date || metadata.preprint_date || "";
-    if (!dateString) {
-      return "n.d.";
+    if (dateString) {
+      return String(dateString).slice(0, 4);
     }
-    return String(dateString).slice(0, 4);
+    var raw = metadata.raw_text || "";
+    var arMatch = raw.match(/arxiv:(\d{2})(\d{2})\./i);
+    if (arMatch) {
+      return "20" + arMatch[1];
+    }
+    var yearMatch = raw.match(/\(20(\d{2})\)/);
+    if (yearMatch) {
+      return "20" + yearMatch[1];
+    }
+    var y4 = raw.match(/\b(19\d{2}|20\d{2})\b/);
+    if (y4) {
+      return y4[1];
+    }
+    return "n.d.";
   }
 
   function getYearNumber(metadata) {
     var year = Number.parseInt(getYear(metadata), 10);
     return Number.isNaN(year) ? null : year;
+  }
+
+  function getRecordSortDate(record) {
+    var metadata = record.metadata || {};
+    if (metadata.earliest_date) {
+      return String(metadata.earliest_date);
+    }
+    if (metadata.preprint_date) {
+      return String(metadata.preprint_date);
+    }
+    var raw = metadata.raw_text || "";
+    var arMatch = raw.match(/arxiv:(\d{2})(\d{2})\./i);
+    if (arMatch) {
+      return "20" + arMatch[1] + "-" + arMatch[2] + "-01";
+    }
+    var yearMatch = raw.match(/\(20(\d{2})\)/);
+    if (yearMatch) {
+      return "20" + yearMatch[1] + "-01-01";
+    }
+    var y4 = raw.match(/\b(19\d{2}|20\d{2})\b/);
+    if (y4) {
+      return y4[1] + "-01-01";
+    }
+    return "1900-01-01";
   }
 
   function getVenue(metadata) {
@@ -554,6 +591,18 @@
         return false;
       }
       return true;
+    });
+
+    // Chronological sorting: newest publications at top, oldest at bottom
+    filtered.sort(function (a, b) {
+      var dateA = getRecordSortDate(a);
+      var dateB = getRecordSortDate(b);
+      if (dateA !== dateB) {
+        return dateB.localeCompare(dateA);
+      }
+      var citeA = (a.metadata && a.metadata.citation_count) || 0;
+      var citeB = (b.metadata && b.metadata.citation_count) || 0;
+      return citeB - citeA;
     });
 
     setStatus("", false);
