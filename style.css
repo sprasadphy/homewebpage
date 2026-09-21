@@ -55,6 +55,16 @@
   box-sizing: border-box;
 }
 
+img,
+picture,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -1067,36 +1077,60 @@ a:hover {
   border-color: rgba(14, 165, 233, 0.35);
 }
 
-/* Research Figures and Pedagogical Callouts */
-.figure-card {
-  background: #ffffff;
+/* Research Topic Cards & Embedded Figures */
+.research-topic-card {
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.25rem;
-  margin: 1.5rem 0;
+  padding: 2rem 2.25rem 1.75rem;
+  margin-bottom: 2.25rem;
   box-shadow: var(--shadow-sm);
-  transition: box-shadow var(--anim-med);
+  transition: border-color var(--anim-fast), box-shadow var(--anim-fast);
+  overflow: hidden;
 }
 
-.figure-card:hover {
-  box-shadow: var(--shadow-md);
+.research-topic-card:hover {
+  border-color: rgba(14, 165, 233, 0.4);
+  box-shadow: var(--shadow);
 }
 
+.research-topic-card h2 {
+  font-size: 1.35rem;
+  color: var(--slate-900);
+  margin-top: 0.25rem;
+  margin-bottom: 1.15rem;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.65rem;
+}
+
+.figure-embedded,
+.figure-card {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  margin: 1.5rem 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.figure-embedded img,
 .figure-card img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  max-width: 100% !important;
+  width: auto;
+  height: auto !important;
   margin: 0 auto;
-  border-radius: 6px;
-  background: #ffffff;
+  border-radius: 4px;
 }
 
 .figure-caption {
-  margin-top: 0.9rem;
+  margin-top: 0.85rem;
   font-size: 0.88rem;
   line-height: 1.55;
   color: var(--text);
-  border-top: 1px solid var(--border-light);
+  border-top: 1px solid var(--border);
   padding-top: 0.65rem;
 }
 
@@ -1114,9 +1148,9 @@ a:hover {
 
 .figure-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-  margin: 1.5rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0;
 }
 
 .research-callout {
