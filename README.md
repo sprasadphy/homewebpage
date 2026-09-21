@@ -1,10 +1,10 @@
 # Dr. Suraj Prasad – Academic Homepage & CV
 
-[![Deploy to GitHub Pages](https://github.com/imsurajprasad786/homewebpage/actions/workflows/deploy.yml/badge.svg)](https://github.com/imsurajprasad786/homewebpage/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/sprasadphy/homewebpage/actions/workflows/deploy.yml/badge.svg)](https://github.com/sprasadphy/homewebpage/actions/workflows/deploy.yml)
 
 Personal academic website and curriculum vitae for **Dr. Suraj Prasad**, Experimental High-Energy Physics Researcher (ALICE Collaboration at CERN LHC / HUN-REN Wigner Research Centre for Physics).
 
-Live URL: **[https://imsurajprasad786.github.io/homewebpage/](https://imsurajprasad786.github.io/homewebpage/)**
+Live URL: **[https://sprasadphy.github.io/homewebpage/](https://sprasadphy.github.io/homewebpage/)**
 
 ---
 
