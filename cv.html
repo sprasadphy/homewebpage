@@ -3,293 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Complete curriculum vitae of Dr. Suraj Prasad: education, research interests, talks, and publications."
-    />
-    <title>CV | Dr. Suraj Prasad</title>
+    <title>CV | Suraj Prasad</title>
+    <meta name="description" content="Curriculum vitae of Suraj Prasad." />
+    <link rel="canonical" href="https://sprasadphy.github.io/homewebpage/cv.html" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#6f42c1" />
-    <link rel="canonical" href="https://sprasadphy.github.io/homewebpage/cv.html" />
-
-    <!-- Open Graph / Social Sharing -->
+    <meta name="theme-color" content="#1f4e79" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Dr. Suraj Prasad" />
-    <meta property="og:title" content="Curriculum Vitae | Dr. Suraj Prasad" />
-    <meta property="og:description" content="Complete academic CV: PhD IIT Indore, ALICE collaboration, Wigner RCP visits, publications, and talks." />
+    <meta property="og:title" content="CV | Suraj Prasad" />
+    <meta property="og:description" content="Curriculum vitae of Suraj Prasad." />
     <meta property="og:url" content="https://sprasadphy.github.io/homewebpage/cv.html" />
-    <meta property="og:image" content="https://sprasadphy.github.io/homewebpage/favicon.svg" />
-
-    <!-- Twitter Card -->
+    <meta property="og:image" content="https://sprasadphy.github.io/homewebpage/assets/photo.jpeg" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Curriculum Vitae | Dr. Suraj Prasad" />
-    <meta name="twitter:description" content="Complete academic CV: PhD IIT Indore, ALICE collaboration, Wigner RCP visits, publications, and talks." />
-    <meta name="twitter:image" content="https://sprasadphy.github.io/homewebpage/favicon.svg" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="theme-violet">
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="nav-wrap">
         <a class="site-title" href="index.html">Suraj Prasad</a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-          Menu
-        </button>
-        <nav id="primary-nav" aria-label="Primary navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+        <nav id="primary-nav" aria-label="Main">
           <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="talks.html">Talks</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a class="active" href="cv.html" aria-current="page">CV</a></li>
+            <li><a href="cv.html" aria-current="page">CV</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="container page-main">
-      <h1>Curriculum Vitae</h1>
-      <p class="lead">
-        <strong>Dr. Suraj Prasad</strong> &bull; Postdoctoral Researcher, HUN-REN Wigner Research Centre for Physics, Budapest, Hungary.
+    <main id="main">
+      <div class="cv-head">
+        <h1>Curriculum Vitae</h1>
+        <button class="print-btn" type="button" onclick="window.print()">Save as PDF</button>
+      </div>
+      <p class="muted">
+        HUN-REN Wigner Research Centre for Physics, Budapest, Hungary ·
+        <a href="mailto:suraj.prasad@wigner.hu">suraj.prasad@wigner.hu</a> ·
+        <a href="https://orcid.org/0000-0003-0607-2841">ORCID</a> ·
+        <a href="https://inspirehep.net/authors/1945401">INSPIRE-HEP</a> ·
+        <a href="https://scholar.google.com/citations?user=O55tlKYAAAAJ">Google Scholar</a> ·
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57311004000">Scopus</a> ·
+        <a href="https://m2.mtmt.hu/gui2/?type=authors&amp;mode=browse&amp;sel=authors10106003">MTMT</a>
       </p>
-      <p class="cv-actions">
-        <button id="download-cv-pdf" type="button">Download CV as PDF</button>
+
+      <h2>Positions</h2>
+      <ul class="dated">
+        <li><span class="when">2026 – present</span><div class="what"><strong>Postdoctoral Researcher</strong>, HUN-REN Wigner Research Centre for Physics, Budapest, Hungary<p class="muted small">With Dr. Gergely Gábor Barnaföldi</p></div></li>
+        <li><span class="when">2020 – present</span><div class="what"><strong>Member</strong>, ALICE Collaboration, CERN</div></li>
+        <li><span class="when">2022, 2024, 2025</span><div class="what"><strong>Visiting researcher</strong>, (HUN-REN) Wigner Research Centre for Physics, Budapest<p class="muted small">September 2022; April–May 2024; July–August 2025</p></div></li>
+      </ul>
+
+      <h2>Education</h2>
+      <ul class="dated">
+        <li><span class="when">2020 – 2025</span><div class="what"><strong>PhD in Physics</strong> (Experimental High Energy Physics), Indian Institute of Technology Indore, India<p class="muted small">Supervisor: Prof. Raghunath Sahoo. Thesis: <em>Exploring the strangeness enhancement and collectivity in pp and Pb–Pb collisions at the LHC using event shape engineering</em>, defended 6 October 2025, <a href="https://doi.org/10.17181/9v1cx-sq289">doi:10.17181/9v1cx-sq289</a></p></div></li>
+        <li><span class="when">2017 – 2019</span><div class="what"><strong>MSc in Physics</strong> (High Energy Physics), School of Physics, Sambalpur University, Odisha, India</div></li>
+        <li><span class="when">2014 – 2017</span><div class="what"><strong>BSc in Physics</strong> (First Class Honours with Distinction), Rairangpur College, North Orissa University, Odisha, India</div></li>
+        <li><span class="when">2019, 2020</span><div class="what">Qualified CSIR NET (JRF, Physical Sciences, December 2019) and GATE 2020 (Physics)</div></li>
+      </ul>
+
+      <h2>Research interests</h2>
+      <div class="prose">
+        <p>
+          Signatures of quark-gluon plasma and their onset from small to large collision systems, studied with event-shape
+          engineering and machine learning. Constraining α-clustering and deformation of the colliding nuclei (O, Ne) with
+          collective flow observables at RHIC and LHC energies.
+        </p>
+      </div>
+
+      <h2>ALICE analyses</h2>
+      <ul class="dated">
+        <li><span class="when">Run 3</span><div class="what">Two-particle angular correlations and jet-medium interaction in pO, OO and Ne–Ne collisions <span class="muted">(preliminary, LHCP 2026)</span></div></li>
+        <li><span class="when">Run 3</span><div class="what">K<sup>0</sup><sub>S</sub> and Λ production as a function of charged-particle flattenicity in pp collisions at √<i>s</i> = 13.6 TeV <span class="muted">(preliminary, Quark Matter 2025)</span></div></li>
+        <li><span class="when">Run 2</span><div class="what">Particle production as a function of charged-particle flattenicity in pp collisions at √<i>s</i> = 13 TeV <span class="muted">(published, <a href="https://doi.org/10.1103/PhysRevD.111.012010">Phys. Rev. D 111, 012010</a>)</span></div></li>
+      </ul>
+
+      <h2>Awards</h2>
+      <ul class="dated">
+        <li><span class="when">2025</span><div class="what"><strong>Best Poster Presentation Award</strong>, DAE Symposium on Nuclear Physics (SNP-2025), NIT Jalandhar, India<p class="muted small">Flow fluctuations as a signature of clustered nuclear structure in O–O collisions at the LHC</p></div></li>
+        <li><span class="when">2024</span><div class="what"><strong>Best Poster Award</strong> to my co-author Aswathy Menon K. R. for our joint work, XXVI DAE-BRNS High Energy Physics Symposium, BHU Varanasi, India</div></li>
+      </ul>
+
+      <h2>Scientific metrics</h2>
+      <div class="prose">
+        <p>
+          4,617 citations and h-index 35 over all papers (1,786 and 21 without self-citations). For papers with ten or fewer
+          authors: 57 citeable records, 381 citations, h-index 12. Twenty journal articles with ten or fewer authors, seven of
+          them as first author. Cumulative impact factor 916.7 overall and 111.8 for papers with ten or fewer authors.
+          <span class="muted">(INSPIRE-HEP, 12 November 2026)</span>
+        </p>
+      </div>
+
+      <h2>Skills</h2>
+      <ul class="dated">
+        <li><span class="when">Programming</span><div class="what">C, C++, Python, ROOT and PyROOT, Fortran, Bash, LaTeX</div></li>
+        <li><span class="when">Analysis</span><div class="what">ALICE AliRoot (Run 1–2) and O2 (Run 3); machine learning methods for collider data; HPC and Linux environments</div></li>
+        <li><span class="when">Models</span><div class="what">PYTHIA 8, AMPT, EPOS, HIJING, IP-Glasma, MUSIC, iSS, UrQMD</div></li>
+        <li><span class="when">Languages</span><div class="what">English, Hindi, Odia</div></li>
+      </ul>
+
+      <h2>Teaching</h2>
+      <ul class="dated">
+        <li><span class="when">IIT Indore</span><div class="what">Teaching assistant for BTech students: Modern Physics (one semester) and Physics Lab (three semesters)</div></li>
+      </ul>
+
+      <h2>Publications and talks</h2>
+      <p>
+        See the <a href="publications.html">publication list</a> (20 journal articles, 8 preprints and 31 proceedings with ten or
+        fewer authors) and the <a href="talks.html">list of talks</a> (22 contributions, including one invited talk).
       </p>
-
-      <section class="content-section" aria-labelledby="cv-contact">
-        <h2 id="cv-contact">Contact and Profiles</h2>
-        <ul class="highlights-list">
-          <li>Email: <a href="mailto:suraj.prasad@wigner.hu">suraj.prasad@wigner.hu</a></li>
-          <li>ORCID: <a href="https://orcid.org/0000-0003-0607-2841" target="_blank" rel="noopener noreferrer">0000-0003-0607-2841</a></li>
-          <li>INSPIRE-HEP: <a href="https://inspirehep.net/authors/1945401" target="_blank" rel="noopener noreferrer">inspirehep.net/authors/1945401</a></li>
-          <li>Google Scholar: <a href="https://scholar.google.com/citations?user=O55tlKYAAAAJ" target="_blank" rel="noopener noreferrer">Suraj Prasad Profile</a></li>
-          <li>Scopus Author ID: <a href="https://www.scopus.com/authid/detail.uri?authorId=57311004000" target="_blank" rel="noopener noreferrer">57311004000</a></li>
-          <li>MTMT (Hungarian National Scientific Bibliography): <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=authors10106003" target="_blank" rel="noopener noreferrer">authors10106003</a></li>
-        </ul>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-metrics">
-        <h2 id="cv-metrics">Scientific Metrics</h2>
-        <div class="two-col">
-          <article class="panel">
-            <h3>Overall (including ALICE Collaboration)</h3>
-            <ul>
-              <li><strong>Total Publications:</strong> 243+ on InspireHEP</li>
-              <li><strong>Total Citations:</strong> 4,274+ (1,629+ independent citations)</li>
-              <li><strong>h-index:</strong> 34</li>
-              <li><strong>Cumulative Impact Factor:</strong> 880.9 (refereed journals)</li>
-            </ul>
-          </article>
-          <article class="panel">
-            <h3>Core Publications (&le;10 Authors)</h3>
-            <ul>
-              <li><strong>Primary Articles:</strong> 56 publications</li>
-              <li><strong>Citations:</strong> 360+ (136 independent citations)</li>
-              <li><strong>h-index:</strong> 12</li>
-              <li><strong>Cumulative Impact Factor:</strong> 111.8 (refereed journals)</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-awards">
-        <h2 id="cv-awards">Honors and Awards</h2>
-        <ul class="highlights-list">
-          <li>
-            <span class="award-badge">2025</span>
-            <strong>Best Poster Presentation Award</strong>, DAE Symposium on Nuclear Physics (SNP-2025), Dr. B. R. Ambedkar National Institute of Technology Jalandhar, India (Dec 8–12, 2025). Awarded for poster E35: <em>"Flow Fluctuations as a Signature of Clustered Nuclear Structure in O-O Collisions at the LHC"</em>, S. Prasad, N. Mallick, R. Sahoo et al.
-          </li>
-          <li>
-            <span class="award-badge">2024</span>
-            <strong>Best Poster Award</strong>, XXVI DAE–BRNS High Energy Physics Symposium 2024, Banaras Hindu University, Varanasi, India (Dec 19–23, 2024). Awarded to co-author Aswathy Menon K R for poster <em>"Investigating the Effects of Exotic &alpha;-Clustered Nuclear Density Profiles on Medium Anisotropy in p-O and p-C Collisions at the LHC"</em>, joint work with S. Prasad, N. Mallick, and R. Sahoo.
-          </li>
-        </ul>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-research-exp">
-        <h2 id="cv-research-exp">Research Experience (Outside Ph.D.)</h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <h3>Postdoctoral Researcher (15 Jan 2026 – Present)</h3>
-            <p>HUN-REN Wigner Research Centre for Physics, Budapest, Hungary</p>
-            <p>Supervisor: Dr. Gergely Gábor Barnaföldi</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-education">
-        <h2 id="cv-education">Education</h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <h3>PhD Physics, Experimental High Energy Physics (2020-2025)</h3>
-            <p>Department of Physics, Indian Institute of Technology Indore, India</p>
-            <p>
-              Thesis Supervisor:
-              <a href="https://people.iiti.ac.in/~raghunath/" target="_blank" rel="noopener noreferrer">Prof. Raghunath Sahoo</a>
-            </p>
-            <p>
-              Thesis: <em>"Exploring the strangeness enhancement and collectivity in pp and Pb-Pb collisions at the LHC using event shape engineering"</em> &bull;
-              DOI: <a href="https://doi.org/10.17181/9v1cx-sq289" target="_blank" rel="noopener noreferrer">10.17181/9v1cx-sq289</a>
-              (Defended on 06 October 2025)
-            </p>
-          </article>
-          <article class="timeline-item">
-            <h3>MSc Physics, High Energy Physics (2017-2019)</h3>
-            <p>School of Physics, Sambalpur University, Odisha, India</p>
-          </article>
-          <article class="timeline-item">
-            <h3>BSc Physics, First Class Honours with Distinction (2014-2017)</h3>
-            <p>Rairangpur College, North Orissa University, Odisha, India</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-skills">
-        <h2 id="cv-skills">Skills</h2>
-        <ul class="highlights-list">
-          <li>Languages: English, Hindi, Odia</li>
-          <li>Programming: C, C++, Python, Fortran, Mathematica, MATLAB, Bash, LaTeX</li>
-          <li>Strong competence in CERN-ROOT and Machine Learning</li>
-          <li>Event Generators: PYTHIA8, AMPT, HIJING, EPOS-LHC, EPOS4, MUSIC, IPGlasma, UrQMD</li>
-        </ul>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-interests">
-        <h2 id="cv-interests">Research Interests</h2>
-        <ul class="highlights-list">
-          <li>Quark-gluon plasma signatures from small to large collision systems using event shape engineering and machine learning</li>
-          <li>Signatures of alpha-clustering in light nuclei at RHIC and LHC energies</li>
-          <li>Event-shape engineering and machine learning in pp and e+e- collisions for new physics searches</li>
-        </ul>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-expt">
-        <h2 id="cv-expt">Experimental Collaboration: ALICE (CERN LHC)</h2>
-        <ul class="highlights-list">
-          <li>
-            <strong>ALICE Collaboration</strong>, <em>Particle production versus charged-particle flattenicity in pp collisions at $\sqrt{s} = 13\text{ TeV}$</em>, <a href="https://doi.org/10.1103/PhysRevD.111.012010" target="_blank" rel="noopener noreferrer">Phys. Rev. D <strong>111</strong>, 012010 (2025)</a> [DOI: <a href="https://doi.org/10.1103/PhysRevD.111.012010" target="_blank" rel="noopener noreferrer">10.1103/PhysRevD.111.012010</a>].
-          </li>
-        </ul>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-visit">
-        <h2 id="cv-visit">Visiting Positions</h2>
-        <ul class="highlights-list">
-          <li>Visitor, Wigner Research Center for Physics, Budapest (Sep 1-30, 2022)</li>
-          <li>Visitor, HUN-REN Wigner Research Center for Physics, Budapest (Apr 11-May 11, 2024)</li>
-          <li>Visitor, HUN-REN Wigner Research Center for Physics, Budapest (Jul 29-Aug 23, 2025)</li>
-        </ul>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-talks">
-        <h2 id="cv-talks">Talks and Presentations</h2>
-        <ul class="highlights-list">
-          <li>17 May 2022, LHCP 2022 Poster: Transverse spherocity dependence of global observables in heavy-ion collisions (AMPT) - <a href="https://indico.cern.ch/event/1109611/contributions/4820778" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>20 Jun 2022, GPU Day 2022 (Wigner): Machine learning based estimator for elliptic flow - <a href="https://indico.wigner.hu/event/1393/contributions/3162" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>9 Sep 2022, Wigner talk: Transverse spherocity dependent correlation studies - <a href="https://indico.wigner.hu/event/1415" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>10 Nov 2022, IIT Indore AI/ML Workshop oral: DNN estimator for elliptic flow - <a href="https://indico.cern.ch/event/1215159/contributions/5129549" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>05 Dec 2022, 66th DAE Symposium poster: Transverse spherocity dependence - <a href="http://sympnp.org/proceedings/66/E54.pdf" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>15 Dec 2022, XXV DAE-BRNS HEP Symposium poster: Initial/final anisotropies - <a href="https://indico.cern.ch/event/1146097/contributions/5127511" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>21 Jan 2023, IIT Indore RIC oral: DNN-based estimator for elliptic flow coefficient</li>
-          <li>08 Feb 2023, ICPAQGP-2023 poster: Event topology in heavy-ion collisions - <a href="https://events.vecc.gov.in/event/19/abstracts/504" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>03 Nov 2023, Heavy Flavour Meet 2023 oral: Inclusive/prompt/non-prompt J/psi with ML - <a href="https://www.iitgoa.ac.in/HeavyFlavourMeet2023/timetable.html" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>09 Dec 2023, DAE Symposium oral: Segregating topological productions of J/psi - <a href="http://sympnp.org/proceedings/67/E4" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>11 Dec 2023, DAE Symposium poster: Spherocity vs initial/final anisotropies - <a href="http://sympnp.org/proceedings/67/E76" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>19 Apr 2024, Wigner talk: Prompt and non-prompt J/psi production with ML - <a href="https://indico.wigner.hu/event/1572/" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>19 Dec 2024, XXVI DAE-BRNS HEP oral: Flow fluctuation with alpha-clustered O16 - <a href="https://indico.cern.ch/event/1426931/contributions/6238372/" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>19 Dec 2024, XXVI DAE-BRNS HEP oral: Prompt/non-prompt charm hadrons with ML - <a href="https://indico.cern.ch/event/1426931/contributions/6237232/" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>13-16 Jan 2025, ATHIC 2025 oral: alpha-cluster effects in O16-O16 (CGC+Hydro) - <a href="https://indico.cern.ch/event/1424442/contributions/6257532/" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>21 Jan 2025, IIT Indore workshop oral: Nuclear density profile in O-O global properties and anisotropic flow - <a href="https://indico.cern.ch/event/1484546/contributions/6331501/" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>6-12 Apr 2025, QM2025 poster: alpha-cluster profile in O16-O16 via flow fluctuations - <a href="https://indico.cern.ch/event/1334113/contributions/6291261/" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>6-12 Apr 2025, QM2025 poster: K0S and Lambda production vs flattenicity in pp with ALICE - <a href="https://indico.cern.ch/event/1334113/contributions/6291974/" target="_blank" rel="noopener noreferrer">link</a></li>
-          <li>8 Aug 2025, HUN-REN Wigner talk: Impact of elliptic flow on higher-order flow coefficients - <a href="https://indico.wigner.hu/event/1697/" target="_blank" rel="noopener noreferrer">link</a></li>
-        </ul>
-      </section>
-
-      <section class="content-section" aria-labelledby="cv-pubs">
-        <h2 id="cv-pubs">Research Publications</h2>
-        <h3>Articles (Published)</h3>
-        <ol class="highlights-list">
-          <li>A. Menon. K. R, S. Prasad, N. Mallick and R. Sahoo, <em>Topological production of charmonia with event-shape engineering in $pp$ collisions at $sqrt(s) = 13$ TeV using PYTHIA8</em>, <a href="https://doi.org/10.1103/dtgx-hrbp" target="_blank" rel="noopener noreferrer">Phys. Rev. D 113, 054032 (2026), arXiv:2511.22190</a>.</li>
-          <li>R. Sahoo, K. Goswami, and S. Prasad, <em>Machine learning driven identification of heavy flavor decay leptons in proton-proton collisions at the Large Hadron Collider</em>, <a href="https://doi.org/10.1103/qpmc-gtmt" target="_blank" rel="noopener noreferrer">Phys. Rev. D 113, 094025 (2026), arXiv:2509.00712</a>.</li>
-          <li>S. Prasad, S. Tripathy, B. Sahoo, and R. Sahoo, <em>Event Topology Classifiers at the Large Hadron Collider</em>, <a href="https://doi.org/10.1016/j.physrep.2026.04.001" target="_blank" rel="noopener noreferrer">Phys. Rept. 1181, 1-75 (2026), arXiv:2506.03782</a>.</li>
-          <li>A. Menon. KR, S. Prasad, N. Mallick, R. Sahoo, and G. G. Barnaföldi, <em>Probing nuclear structure in relativistic p-O and O-O collisions at the LHC through the measurement of anisotropic flow coefficients</em>, <a href="https://doi.org/10.1016/j.physletb.2025.139941" target="_blank" rel="noopener noreferrer">Phys. Lett. B 870, 139941 (2025), arXiv:2505.22367</a>.</li>
-          <li>S. Prasad, A. Menon. K. R, R. Sahoo, and N. Mallick, <em>Higher order ﬂow coeﬃcients -- A Messenger of QCD medium formed in heavy-ion collisions at the Large Hadron Collider</em>, <a href="https://doi.org/10.1016/j.physletb.2025.139753" target="_blank" rel="noopener noreferrer">Phys. Lett. B 868, 139753 (2025), arXiv:2505.01471</a>.</li>
-          <li>S. Tripathy, S. Prasad, and R. Sahoo, <em>Event shape dependence of symmetry plane correlations using the Gaussian estimator in Pb-Pb collisions at the LHC using a multiphase transport model</em>, <a href="https://doi.org/10.1103/cxx6-kf5y" target="_blank" rel="noopener noreferrer">Phys. Rev. D 112, 114012 (2025), arXiv:2504.09275</a>.</li>
-          <li>S. Prasad, B. Sahoo, S. Tripathy, N. Mallick, and R. Sahoo, <em>Probing strangeness with event topology classiﬁers in pp collisions at energies available at the CERN Large Hadron Collider with the rope hadronization mechanism in PYTHIA</em>, <a href="https://doi.org/10.1103/PhysRevC.111.044902" target="_blank" rel="noopener noreferrer">Phys. Rev. C 111, 044902 (2025), arXiv:2409.05454</a>.</li>
-          <li>S. Prasad, N. Mallick, R. Sahoo, and B. B. Barnafoldi, <em>Anisotropic flow fluctuation as a possible signature of clustered nuclear geometry in O-O collisions at the Large Hadron Collider</em>, <a href="https://doi.org/10.1016/j.physletb.2024.139145" target="_blank" rel="noopener noreferrer">Phys. Lett. B 860, 139145 (2025), arXiv:2407.15065</a>.</li>
-          <li>A. Menon KR, S. Prasad, N. Mallick, and R. Sahoo, <em>Role of clustered nuclear geometry in particle production through p-C and p-O collisions at the Large Hadron Collider</em>, <a href="https://doi.org/10.1140/epja/s10050-025-01608-3" target="_blank" rel="noopener noreferrer">Eur. Phys. J. A 61, 134 (2025), arXiv:2407.03823</a>.</li>
-          <li>K. Goswami, S. Prasad, N. Mallick, R. Sahoo, and G. B. Mohanty, <em>A machine learning-based study of open-charm hadrons in proton-proton collisions at the Large Hadron Collider</em>, <a href="https://doi.org/10.1103/PhysRevD.110.034017" target="_blank" rel="noopener noreferrer">Phys. Rev. D 110, 034017 (2024), arXiv:2404.09839</a>.</li>
-          <li>A. Menon K R, S. Prasad, S. Tripathy, N. Mallick and R. Sahoo, <em>Investigating radial-flow-like effects via pseudorapidity and transverse spherocity dependence of particle production in pp collisions at the LHC</em>, <a href="https://doi.org/10.1140/epjp/s13360-025-05996-9" target="_blank" rel="noopener noreferrer">Eur. Phys. J. Plus 140, 110 (2025), arXiv:2309.08336</a>.</li>
-          <li>S. Prasad, N. Mallick and R. Sahoo, <em>Inclusive, prompt and nonprompt J/$\psi$ identification in proton-proton collisions at the Large Hadron Collider using machine learning</em>, <a href="https://doi.org/10.1103/PhysRevD.109.014005" target="_blank" rel="noopener noreferrer">Phys. Rev. D 109, 014005 (2024), arXiv:2308.00329</a>.</li>
-          <li>D Behera, S Prasad, N Mallick and R Sahoo, <em>Effects of clustered nuclear geometry on the anisotropic flow in O-O collisions at the LHC within a multiphase transport model framework</em>, <a href="https://doi.org/10.1103/PhysRevD.108.054022" target="_blank" rel="noopener noreferrer">Phys. Rev. D 108, 054022 (2023), arXiv:2304.10879</a>.</li>
-          <li>N. Mallick, S. Prasad, A. N. Mishra, R. Sahoo, and G. G. Barnafoldi, <em>Deep learning predicted elliptic flow of identified particles in heavy-ion collisions at the RHIC and LHC energies</em>, <a href="https://doi.org/10.1103/PhysRevD.107.094001" target="_blank" rel="noopener noreferrer">Phys. Rev. D 107, 094001 (2023), arXiv:2301.10426</a>.</li>
-          <li>A. Ortiz, A. Khuntia, O. Vázquez-Rueda, S. Tripathy, G. Bencedi, S. Prasad and F. Fan, <em>Unveiling the effects of multiple soft partonic interactions in pp collisions at $sqrt(s)=13$ TeV using a new event classifier</em>, <a href="https://doi.org/10.1103/PhysRevD.107.076012" target="_blank" rel="noopener noreferrer">Phys. Rev. D 107, 076012 (2023), arXiv:2211.06093</a>.</li>
-          <li>S. Prasad, N. Mallick, S. Tripathy, and R. Sahoo, <em>Probing initial geometrical anisotropy and final azimuthal anisotropy in heavy-ion collisions at Large Hadron Collider energies through event-shape engineering</em>, <a href="https://doi.org/10.1103/PhysRevD.107.074011" target="_blank" rel="noopener noreferrer">Phys. Rev. D 107, 074011 (2023), arXiv:2207.12133</a>.</li>
-          <li>N. Mallick, S. Prasad, A. N. Mishra, R. Sahoo, and G. G. Barnafoldi, <em>Estimating elliptic flow coefficient in heavy ion collisions using deep learning</em>, <a href="https://doi.org/10.1103/PhysRevD.105.114022" target="_blank" rel="noopener noreferrer">Phys. Rev. D 105, 114022 (2022), arXiv:2203.01246</a>.</li>
-          <li>S. Prasad, N. Mallick, D. Behera, R. Sahoo and S. Tripathy, <em>Event topology and global observables in heavy-ion collisions at the Large Hadron Collider</em>, <a href="https://doi.org/10.1038/s41598-022-07547-z" target="_blank" rel="noopener noreferrer">Sci. Rep. 12, 3917 (2022), arXiv:2112.03892</a>.</li>
-          <li>D. Behera, N. Mallick, S. Tripathy, S. Prasad, A. N. Mishra and R. Sahoo, <em>Predictions on global properties in O+O collisions at the Large Hadron Collider using a multi-phase transport model</em>, <a href="https://doi.org/10.1140/epja/s10050-022-00823-6" target="_blank" rel="noopener noreferrer">Eur. Phys. J. A 58, 175 (2022), arXiv:2110.04016</a>.</li>
-        </ol>
-
-        <h3>Articles (Communicated / Preprints)</h3>
-        <ol class="highlights-list">
-          <li>S. Prasad, A. N. Mishra, G. Paić and G. G. Barnaföldi, <em>Evolution of the underlying event and non-extensive thermodynamics in pp collisions from RHIC to LHC energies</em>, <a href="https://arxiv.org/abs/2608.10717" target="_blank" rel="noopener noreferrer">arXiv:2608.10717 (2026)</a>.</li>
-          <li>A. Menon K.R., S. Prasad, N. Mallick, R. Sahoo and G. G. Barnaföldi, <em>Constraining &alpha;-cluster compactness in <sup>16</sup>O and <sup>20</sup>Ne at TeV energies using azimuthal anisotropy</em>, <a href="https://arxiv.org/abs/2607.26758" target="_blank" rel="noopener noreferrer">arXiv:2607.26758 (2026)</a>.</li>
-          <li>S. Prasad and R. Sahoo, <em>Nuclear geometry driven symmetry plane correlations in OO and Ne--Ne collisions at the Large Hadron Collider</em>, <a href="https://arxiv.org/abs/2605.00866" target="_blank" rel="noopener noreferrer">arXiv:2605.00866 (2026)</a>.</li>
-          <li>R. Gupta, K. Goswami, S. Prasad and R. Sahoo, <em>Inferring identified hadron production in $pp$ collisions with physics-informed machine learning at the LHC</em>, <a href="https://arxiv.org/abs/2605.09022" target="_blank" rel="noopener noreferrer">arXiv:2605.09022 (2026)</a>.</li>
-          <li>R. Gupta, K. Goswami, S. Prasad and R. Sahoo, <em>MAGE-HEP: Monte Carlo Analysis and Graphical Environment for High-Energy Physics</em>, <a href="https://arxiv.org/abs/2605.17871" target="_blank" rel="noopener noreferrer">arXiv:2605.17871 (2026)</a>.</li>
-          <li>R. K. Tiwari, K. Goswami, S. Prasad, C. R. Singh, R. Sahoo and M. Y. Jamal, <em>Thermodynamic and Transport Properties of Quark-Gluon Plasma at Finite Chemical Potential with a DNN framework</em>, <a href="https://arxiv.org/abs/2604.05858" target="_blank" rel="noopener noreferrer">arXiv:2604.05858 (2026)</a>.</li>
-          <li>A. Menon. K. R, S. Prasad, P. Srivastava and R. Sahoo, <em>Probing the microscopic origin of prompt and non-prompt $D^0$ production through event-shape engineering in proton-proton collisions at the LHC</em>, <a href="https://arxiv.org/abs/2601.06856" target="_blank" rel="noopener noreferrer">arXiv:2601.06856 (2026)</a>.</li>
-        </ol>
-
-        <h3>Conference Proceedings</h3>
-        <ol class="highlights-list">
-          <li>S. Prasad, N. Mallick, R. Sahoo and G. G. Barnafoldi, <em>Exploring the effects of &alpha;-clustered structure of <sup>16</sup>O nuclei in anisotropic flow fluctuations in <sup>16</sup>O-<sup>16</sup>O collisions at the LHC within a CGC+Hydro framework</em>, <a href="https://doi.org/10.1016/j.jspc.2026.100290" target="_blank" rel="noopener noreferrer">J. Subatomic Part. Cosmol. 5, 100290 (2026)</a>.</li>
-          <li>S. Prasad, N. Mallick, R. Sahoo and G. G. Barnaföldi, <em>Flow fluctuations as a signature of clustered nuclear structure in OO collisions at the LHC</em>, <a href="https://sympnp.org/proceedings/69/E35.pdf" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 69, 1043 (2026)</a>.</li>
-          <li>S. Prasad, N. Mallick, R. Sahoo and G. G. Barnaföldi, <em>Anisotropic Flow Fluctuation in Presence of &alpha;-Clustered Structure of <sup>16</sup>O Nuclei in O-O collisions at the LHC</em>, <a href="https://doi.org/10.1007/978-981-95-1513-4_192" target="_blank" rel="noopener noreferrer">Springer Proc. Phys. 432, 840 (2026)</a>.</li>
-          <li>S. Prasad, R. Sahoo, K. Goswami, N. Mallick and G. B. Mohanty, <em>Prompt and Non-prompt Production of Open and Hidden Charm Hadrons at the Large Hadron Collider Using Machine Learning</em>, <a href="https://doi.org/10.1007/978-981-95-1513-4_189" target="_blank" rel="noopener noreferrer">Springer Proc. Phys. 432, 827 (2026)</a>.</li>
-          <li>A. M. K. Radhakrishnan, S. Prasad, N. Mallick, R. Sahoo and G. G. Barnaföldi, <em>Impact of &alpha;-clustered nuclear structure on anisotropic flow coefficients in pO and OO collisions at the LHC</em>, <a href="https://sympnp.org/proceedings/69/E57.pdf" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 69, 1087 (2026)</a>.</li>
-          <li>P. Srivastava, A. M. K. Radhakrishnan, S. Prasad and R. Sahoo, <em>Exploring the transverse spherocity and multiplicity dependent D<sup>0</sup> production in proton-proton collisions at LHC using PYTHIA</em>, <a href="https://sympnp.org/proceedings/69/E20.pdf" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 69, 1013 (2026)</a>.</li>
-          <li>R. Sahoo, K. Goswami and S. Prasad, <em>A novel machine learning method to identify heavy-flavor decay leptons</em>, <a href="https://sympnp.org/proceedings/69/G21.pdf" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 69, 1207 (2026)</a>.</li>
-          <li>K. R. Aswathy Menon, S. Prasad, N. Mallick and R. Sahoo, <em>Investigating the Effects of Exotic &alpha;-Clustered Nuclear Density Profile on Medium Anisotropy in p-O and p-C Collisions at the LHC</em>, <a href="https://doi.org/10.1007/978-981-95-1513-4_246" target="_blank" rel="noopener noreferrer">Springer Proc. Phys. 432, 1079 (2026)</a>.</li>
-          <li>S. Prasad, B. Sahoo, S. Tripathy, N. Mallick and R. Sahoo, <em>Exploring strangeness enhancement in proton-proton collisions at the LHC with event shapes</em>, <a href="https://inspirehep.net/files/611edb1d9856ed112637b2d419153727" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 68, 987 (2025)</a>.</li>
-          <li>S. Prasad, N. Mallick, S. Tripathy, D. Behera, and R. Sahoo, <em>Event topology in heavy-ion collisions: The initial spatial anisotropy and final azimuthal anisotropy</em>, <a href="https://doi.org/10.1016/j.jspc.2025.100110" target="_blank" rel="noopener noreferrer">J. Subatomic Part. Cosmol. 4, 100110 (2025)</a>.</li>
-          <li>A. Menon. K. R, S. Prasad, N. Mallick and R. Sahoo, <em>Exploring the medium anisotropy in p--O and p--C collisions at the LHC energy with exotic &alpha;-clusters</em>, <a href="https://inspirehep.net/files/a12aed8eb61262e6525093d60ab9e923" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 68, 977 (2025)</a>.</li>
-          <li>K. Goswami, S. Prasad, N. Mallick, R. Sahoo and G. B. Mohanty, <em>A study of open-charmed hadrons in p-p collisions using machine learning methods</em>, <a href="https://inspirehep.net/files/a2e7eaab01697d8165882b62acfb6c5b" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 68, 945 (2025)</a>.</li>
-          <li>G. G. Barnafoldi, N. Mallick, S. Prasad, R. Sahoo and A. N. Mishra, <em>A Deep Learning Based Estimator for Light Flavour Elliptic Flow in Heavy Ion Collisions at LHC Energies</em>, <a href="https://doi.org/10.1051/epjconf/202531603004" target="_blank" rel="noopener noreferrer">EPJ Web Conf. 316, 03004 (2025)</a>.</li>
-          <li>R. Sahoo, S. Prasad, N. Mallick, K. Goswami and G. B. Mohanty, <em>Prompt and non-prompt production of charm hadrons in proton-proton collisions at the Large Hadron Collider using machine learning</em>, <a href="https://doi.org/10.1016/j.jspc.2025.100085" target="_blank" rel="noopener noreferrer">J. Subatomic Part. Cosmol. 4, 100085 (2025)</a>.</li>
-          <li>A. Menon Kavumpadikkal Radhakrishnan, S. Prasad, N. Mallick and R. Sahoo, <em>Medium anisotropy in p-O and p-C collisions at the LHC with exotic &alpha;-clustered nuclear density profiles</em>, <a href="https://doi.org/10.1016/j.jspc.2025.100244" target="_blank" rel="noopener noreferrer">J. Subatomic Part. Cosmol. 4, 100244 (2025)</a>.</li>
-          <li>D. Behera, N. Mallick, S. Tripathy, S. Prasad, A. N. Mishra and R. Sahoo, <em>Study of global observables in O-O collisions at $sqrt(s)_NN=7$ TeV using a transport model</em>, <a href="https://doi.org/10.1016/j.jspc.2025.100260" target="_blank" rel="noopener noreferrer">J. Subatomic Part. Cosmol. 4, 100260 (2025)</a>.</li>
-          <li>S. Prasad, N. Mallick, S. Tripathy, R. Sahoo, <em>Studying the dependence of transverse spherocity on the initial and final state anisotropies in heavy-ion collisions</em>, <a href="http://sympnp.org/proceedings/67/E76" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 67, 1133 (2024)</a>.</li>
-          <li>S. Prasad, N. Mallick, R. Sahoo, <em>Segregating the topological productions of J/$\psi$ at the Large Hadron Collider using machine learning</em>, <a href="http://sympnp.org/proceedings/67/E4" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 67, 989 (2024)</a>.</li>
-          <li>S. Prasad, N. Mallick, S. Tripathy, R. Sahoo, <em>A Study on Transverse Spherocity Dependent Initial and Final State Anisotropies in Heavy-ion Collisions</em>, <a href="https://doi.org/10.1007/978-981-97-0289-3_177" target="_blank" rel="noopener noreferrer">Springer Proc. Phys. 304, 731 (2024)</a>.</li>
-          <li>S. Tripathy, S. Prasad, N. Mallick, B. Sahoo, R. Sahoo, <em>A review on event shape studies in ultra-relativistic collisions at the LHC energies</em>, <a href="http://sympnp.org/proceedings/67/E77" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 67, 1135 (2024)</a>.</li>
-          <li>A. Menon K. R, S. Prasad, N. Mallick, S. Tripathy, R. Sahoo, <em>Pseudorapidity and transverse spherocity dependence of particle production in proton+proton collisions at the LHC</em>, <a href="http://sympnp.org/proceedings/67/E24" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 67, 1029 (2024)</a>.</li>
-          <li>D. Behera, S. Prasad, N. Mallick, R. Sahoo, <em>Effects of &alpha;-cluster geometry on the azimuthal anisotropy in O-O collisions at the LHC</em>, <a href="http://sympnp.org/proceedings/67/E31" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 67, 1043 (2024)</a>.</li>
-          <li>N. Mallick, S. Prasad, A. N. Mishra, R. Sahoo, G. G. Barnafoldi, <em>A machine learning approach in estimating the coefficient of azimuthal anisotropy in heavy-ion collisions</em>, <a href="http://sympnp.org/proceedings/67/E55" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 67, 1091 (2024)</a>.</li>
-          <li>D. Behera, N. Mallick, S. Tripathy, S. Prasad, A. N. Mishra, <em>Sensitivity of Nuclear Density Profiles on Global Observables in O-O Collisions at the Large Hadron Collider Using AMPT Model</em>, <a href="https://doi.org/10.1007/978-981-97-0289-3_242" target="_blank" rel="noopener noreferrer">Springer Proc. Phys. 304, 925 (2024)</a>.</li>
-          <li>S. Prasad, N. Mallick, D. Behera, R. Sahoo and S. Tripathy, <em>Transverse spherocity dependence of the global observables in heavy-ion collisions at the LHC</em>, <a href="http://www.sympnp.org/proceedings/66/E54.pdf" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 66, 1016 (2023)</a>.</li>
-          <li>S. Prasad, N. Mallick, D. Behera, R. Sahoo, S. Tripathy, <em>Transverse spherocity dependence of global observables in heavy-ion collisions at the LHC using AMPT model</em>, <a href="https://doi.org/10.22323/1.422.0331" target="_blank" rel="noopener noreferrer">PoS LHCP2022, 331 (2023)</a>.</li>
-          <li>N. Mallick, S. Prasad, A. N. Mishra, R. Sahoo, G. G. Barnafoldi, <em>A Deep Learning Based Estimator for Elliptic Flow in heavy-ion Collisions</em>, <a href="https://doi.org/10.22323/1.422.0259" target="_blank" rel="noopener noreferrer">PoS LHCP2022, 259 (2023)</a>.</li>
-          <li>D. Behera, N. Mallick, S. Tripathy, S. Prasad, A. N. Mishra and R. Sahoo, <em>Global properties in O+O collisions at $sqrt(s)_NN$ = 7 TeV using AMPT model</em>, <a href="https://doi.org/10.22323/1.422.0305" target="_blank" rel="noopener noreferrer">PoS LHCP2022, 305 (2023)</a>.</li>
-          <li>D. Behera, N. Mallick, S. Tripathy, S. Prasad, A. N. Mishra and R. Sahoo, <em>Global properties in O+O collisions at $sqrt(s)_NN$ = 7 TeV using a multi-phase transport model</em>, <a href="https://sympnp.org/proceedings/65/E50.pdf" target="_blank" rel="noopener noreferrer">DAE Symp. Nucl. Phys. 65, 718 (2022)</a>.</li>
-          <li>S. K. Das, et al., <em>Dynamics of Hot QCD Matter — Current Status and Developments</em>, <a href="https://doi.org/10.1142/S0218301322500975" target="_blank" rel="noopener noreferrer">Int. J. Mod. Phys. E 31, 12 (2022)</a>.</li>
-        </ol>
-      </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-wrap">
-        <p>© <span id="year"></span> Suraj Prasad</p>
+      <div class="inner">
+        <p>Suraj Prasad, HUN-REN Wigner Research Centre for Physics, Budapest</p>
+        <p><a href="mailto:suraj.prasad@wigner.hu">suraj.prasad@wigner.hu</a></p>
       </div>
     </footer>
 
     <script src="scripts/nav.js"></script>
-    <script src="scripts/cv-download.js"></script>
-    <script>
-      document.getElementById("year").textContent = String(new Date().getFullYear());
-    </script>
   </body>
 </html>
