@@ -1,11 +1,11 @@
 {
-  "name": "Dr. Suraj Prasad | High-Energy Physics Researcher",
+  "name": "Suraj Prasad",
   "short_name": "Suraj Prasad",
-  "description": "Academic homepage and curriculum vitae of Dr. Suraj Prasad, High-Energy Nuclear Physics Researcher at HUN-REN Wigner RCP and ALICE Collaboration.",
+  "description": "Academic website of Suraj Prasad, HUN-REN Wigner RCP and ALICE Collaboration.",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#f4fbff",
-  "theme_color": "#0f6ab9",
+  "background_color": "#fbfaf7",
+  "theme_color": "#1f4e79",
   "icons": [
     {
       "src": "favicon.svg",
